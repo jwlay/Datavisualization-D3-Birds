@@ -118,6 +118,7 @@ function createVisualization(json) {
   };
 }
 
+
 var sequenceArray;
 // Fade all but the current sequence, and show it in the breadcrumb trail.
 function explanation(d) {
@@ -137,7 +138,19 @@ function explanation(d) {
   updateBreadcrumbs(sequenceArray, percentageString);
 }
 
+var tooltip = d3.select('#sunburst').append("div")
+  .attr("class", "tooltip")
+  .attr("opacity",0);
+
 function mouseover(d) {
+  tooltip.transition()
+    .duration(200)
+    .style("opacity",.9);
+
+  tooltip.html(d.name)
+    .style("left",(250+d3.mouse(this)[0])+"px")
+    .style("top",(370+d3.mouse(this)[1])+"px");
+
   sequenceArray = getAncestors(d);
   // Fade all the segments.
   d3.selectAll("path")
