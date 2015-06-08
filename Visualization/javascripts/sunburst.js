@@ -58,6 +58,7 @@ function stash(d) {
 }
 
 function click(d) {
+  explanation(d);
   path.transition()
     .duration(750)
     .attrTween("d", arcTween(d))
@@ -117,9 +118,9 @@ function createVisualization(json) {
   };
 }
 
+var sequenceArray;
 // Fade all but the current sequence, and show it in the breadcrumb trail.
-function mouseover(d) {
-
+function explanation(d) {
   var percentage = (100 * d.value / totalSize).toPrecision(3);
   var percentageString = percentage + "%";
   if (percentage < 0.1) {
@@ -132,9 +133,12 @@ function mouseover(d) {
   d3.select("#explanation")
       .style("visibility", "");
 
-  var sequenceArray = getAncestors(d);
+  sequenceArray = getAncestors(d);
   updateBreadcrumbs(sequenceArray, percentageString);
+}
 
+function mouseover(d) {
+  sequenceArray = getAncestors(d);
   // Fade all the segments.
   d3.selectAll("path")
       .style("opacity", 0.3);
@@ -150,10 +154,6 @@ function mouseover(d) {
 // Restore everything to full opacity when moving off the visualization.
 function mouseleave(d) {
 
-  // Hide the breadcrumb trail
-  d3.select("#trail")
-      .style("visibility", "hidden");
-
   // Deactivate all segments during transition.
   d3.selectAll("path").on("mouseover", null);
 
@@ -166,8 +166,6 @@ function mouseleave(d) {
               d3.select(this).on("mouseover", mouseover);
             });
 
-  d3.select("#explanation")
-      .style("visibility", "hidden");
 }
 
 // Given a node in a partition layout, return an array of all of its ancestor
