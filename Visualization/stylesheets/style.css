@@ -66,3 +66,6 @@ p{
 circle.inactive {
   fill: grey;
 }
+.body{
+overflow: auto;
+}

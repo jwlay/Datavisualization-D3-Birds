@@ -1,4 +1,4 @@
-d3.json("data/BirdsFinal.json",function(dataset){
+d3.json("data/withNRec.json",function(dataset){
     var h=500;
     var w=1000;
     var padding = 35;

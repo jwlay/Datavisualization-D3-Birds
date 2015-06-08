@@ -6,7 +6,7 @@ d3.json("data/birds.json",function(dataset){
                             var w=5000;
                             var barPadding=1;
                      
-                            var svg = d3.select("body")
+                            var svg = d3.select("bar")
                                 .append("svg")
                                 .attr("width",w)
                                 .attr("height",h);
