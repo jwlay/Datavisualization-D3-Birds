@@ -58,6 +58,14 @@ function stash(d) {
 }
 
 function click(d) {
+  var r = []
+  var obj = {};
+  var obj = d;
+  while (obj.hasOwnProperty('parent')) {
+    r.push(obj.name);
+    obj = obj.parent;
+  }
+  console.log(r);
   explanation(d);
   path.transition()
     .duration(750)
@@ -80,7 +88,6 @@ var path;
 
 // Main function to draw and set up the visualization, once we have the data.
 function createVisualization(json) {
-
   // Basic setup of page elements.
   initializeBreadcrumbTrail();
 
@@ -106,7 +113,6 @@ function createVisualization(json) {
   totalSize = path.node().__data__.value;
  };
 
-
  function arcTween(d) {
   var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
       yd = d3.interpolate(y.domain(), [d.y, 1]),
@@ -117,6 +123,7 @@ function createVisualization(json) {
         : function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); return arc(d); };
   };
 }
+
 
 var sequenceArray;
 // Fade all but the current sequence, and show it in the breadcrumb trail.
@@ -137,7 +144,19 @@ function explanation(d) {
   updateBreadcrumbs(sequenceArray, percentageString);
 }
 
+var tooltip = d3.select('#sunburst').append("div")
+  .attr("class", "tooltip")
+  .attr("opacity",0);
+
 function mouseover(d) {
+  tooltip.transition()
+    .duration(200)
+    .style("opacity",.9);
+
+  tooltip.html(d.name)
+    .style("left",(250+d3.mouse(this)[0])+"px")
+    .style("top",(370+d3.mouse(this)[1])+"px");
+
   sequenceArray = getAncestors(d);
   // Fade all the segments.
   d3.selectAll("path")
