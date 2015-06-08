@@ -1,6 +1,6 @@
 // Dimensions of sunburst.
 var width = 500;
-var height = 600;
+var height = 400;
 var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
@@ -57,13 +57,33 @@ function stash(d) {
   d.dx0 = d.dx;
 }
 
+function click(d) {
+  path.transition()
+    .duration(750)
+    .attrTween("d", arcTween(d))
+}
+
+function changeSelection(query) {
+  var result = root;
+  if (query != 0) {
+  for (i = 0; i < query.length; i++) {
+     result = result.children.filter(function( obj ) {
+      return obj.name == query[i];
+    })[0]
+  };
+  }
+  click(result);
+}
+
+var path;
+
 // Main function to draw and set up the visualization, once we have the data.
 function createVisualization(json) {
 
   // Basic setup of page elements.
   initializeBreadcrumbTrail();
 
-  var path = vis.data([json]).selectAll("path")
+  path = vis.data([json]).selectAll("path")
       .data(partition.nodes(json))
       .enter().append("svg:path")
       .filter(function(d) {
@@ -78,14 +98,8 @@ function createVisualization(json) {
       .on("click", click)
       .each(stash);
 
-      function click(d) {
-        path.transition()
-          .duration(750)
-          .attrTween("d", arcTween(d))
-      }
-
   // Add the mouseleave handler to the bounding circle.
-  d3.select("#main").on("mouseleave", mouseleave);
+  d3.select("#sunburst-container").on("mouseleave", mouseleave);
 
   // Get total size of the tree = value of root node from partition.
   totalSize = path.node().__data__.value;
@@ -104,7 +118,6 @@ function createVisualization(json) {
 }
 
 // Fade all but the current sequence, and show it in the breadcrumb trail.
-
 function mouseover(d) {
 
   var percentage = (100 * d.value / totalSize).toPrecision(3);
@@ -159,7 +172,6 @@ function mouseleave(d) {
 
 // Given a node in a partition layout, return an array of all of its ancestor
 // nodes, highest first, but excluding the root.
-
 function getAncestors(node) {
   var path = [];
   var current = node;
@@ -233,8 +245,9 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 // for a partition layout. The first column is a sequence of step names, from
 // root to leaf, separated by hyphens. The second column is a count of how
 // often that sequence occurred.
+var root;
 function buildHierarchy(csv) {
-  var root = {"name": "root", "children": []};
+   root = {"name": "root", "children": []};
   for (var i = 0; i < csv.length; i++) {
     var sequence = csv[i][0];
     var size = +csv[i][1];
