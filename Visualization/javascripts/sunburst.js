@@ -58,6 +58,14 @@ function stash(d) {
 }
 
 function click(d) {
+  var r = []
+  var obj = {};
+  var obj = d;
+  while (obj.hasOwnProperty('parent')) {
+    r.push(obj.name);
+    obj = obj.parent;
+  }
+  console.log(r);
   explanation(d);
   path.transition()
     .duration(750)
@@ -80,7 +88,6 @@ var path;
 
 // Main function to draw and set up the visualization, once we have the data.
 function createVisualization(json) {
-
   // Basic setup of page elements.
   initializeBreadcrumbTrail();
 
@@ -105,7 +112,6 @@ function createVisualization(json) {
   // Get total size of the tree = value of root node from partition.
   totalSize = path.node().__data__.value;
  };
-
 
  function arcTween(d) {
   var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
