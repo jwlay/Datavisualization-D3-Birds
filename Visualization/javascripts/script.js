@@ -1,49 +1,47 @@
-/*var sql = window.SQL;
+var sql = window.SQL;
 var db;
 var contents;
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'localhost/Visualization/data/birdDatabase.sqlite', true);
+xhr.open('GET', './data/birdDatabase.sqlite', true);
 xhr.responseType = 'arraybuffer';
 
 xhr.onload = function(e) {
   var uInt8Array = new Uint8Array(this.response);
   db = new SQL.Database(uInt8Array);
   contents = db.exec("SELECT * FROM birdsTRY");
-  console.log(contents);
-  // contents is now [{columns:['col1','col2',...], values:[[first row], [second row], ...]}]
 };
-xhr.send();*/
-var sql = window.SQL;
-var fs = window.fs;
-var dbFile = "data/birdDatabase.sqlite";
-var fileBuffer = fs.readFileSync(dbFile);
-var db = new SQL.Database(fileBuffer);
-/*
-// Execute some sql
-sqlstr = "CREATE TABLE hello (a int, b char);";
-sqlstr += "INSERT INTO hello VALUES (0, 'hello');"
-sqlstr += "INSERT INTO hello VALUES (1, 'world');"
-db.run(sqlstr); // Run the query without returning anything
+xhr.send();
 
-var res = db.exec("SELECT * FROM hello");
-console.log(res);
-/*
-[
-    {columns:['a','b'], values:[[0,'hello'],[1,'world']]}
-]
-*/
-/*
-// Prepare an sql statement
-var stmt = db.prepare("SELECT * FROM hello WHERE a=:aval AND b=:bval");
+var sunburstq = [];
+var scatterq = [];
 
-// Bind values to the parameters and fetch the results of the query
-var result = stmt.getAsObject({':aval' : 1, ':bval' : 'world'});
-console.log(result); // Will print {a:1, b:'world'}
+function runsql (query) {
+  if (query[0] == scatter) {
+    scatterq = [];
+    for (var i = 1; i < query.length; i++) {
+      scatterq.push(query[i]);
+    }
+  } else {
+    sunburstq = [];
+    for (var i = 1; i < query.length; i++) {
+      sunburstq.push(query[i]);
+    }
+  }
+  var sqlq = [];
 
-// Bind other values
-stmt.bind([0, 'hello']);
-while (stmt.step()) console.log(stmt.get()); // Will print [0, 'hello']
+  if (sunburstq.length != 0) {
+    for (var i = 0; i < sunburstq.length; i++) {
+      sqlq.push(sunburstq[i]);
+    }
+  }
+  if (scatterq.length != 0) {
+    for (var i = 0; i < scatterq.length; i++) {
+      sqlq.push(scatterq[i]);
+    }
+  }
 
-// free the memory used by the statement
-stmt.free();
-*/
+  var squery = sqlq.join(" AND ");
+
+  contents = db.exec("SELECT * FROM birdsTRY WHERE " +squery);
+  console.log(contents);
+}
