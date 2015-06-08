@@ -24,3 +24,6 @@
     border-image-repeat: stretch stretch;
     }
 }
+#map, #cvsmaps{
+	height: 800px;
+}
