@@ -38,7 +38,11 @@ d3.json("data/BirdsFinal.json",function(dataset){
             .data(dataset)
             .enter()
             .append("circle")
+            .attr("selected", 1)
             .style("fill", function(d) { return color(cValue(d));})
+        	.attr("id", function(d){
+                return d.food;
+            })
             .attr("cx", function(d) {
                 return xScale(d.AvgWingspan);
             })
@@ -53,8 +57,9 @@ d3.json("data/BirdsFinal.json",function(dataset){
                     .duration(200)
                     .style("opacity", .9);
                 tooltip.html("<h>"+d.name+"</h>" + "<br/>"  +"<p>"+ "Wingspan: " + d.AvgWingspan + "<br/>" +                                   "Length: " + d.AvgLength + "<br/>" + "Weight: " + d.AvgWeight + "                               <br/>" + "Food: " + d.food+"</p>")
-                    .style("left", (d3.select(this).attr("cx")) + "px")
-                    .style("top", (d3.select(this).attr("cy")) + "px");
+                       
+                .style("left", (d3.select(this).attr("cx")) + "px")
+                .style("top", (500 + d3.mouse(this)[1]) + "px");
             })
             .on("mouseout", function(d) {
                 tooltip.transition()
@@ -112,11 +117,69 @@ d3.json("data/BirdsFinal.json",function(dataset){
 
     // draw legend colored rectangles
     legend.append("rect")
+            .attr("name",function(d){
+                return d;
+            })
+            .attr("selected",1)
             .attr("x", w - 18)
             .attr("width", 18)
             .attr("height", 18)
-            .style("fill", color);
-
+            .style("fill", color)
+            .on("click",click);
+    
+    var arr = [];
+    
+    function click(d){
+        console.log(d);
+               
+        //console.log(d3.select("rect").attr("name"),d);
+        
+        if(d3.selectAll("[name="+d+"]").attr("selected") == 1){
+        d3.selectAll("[name="+d+"]").transition()
+                                    .style("opacity", 0.2)
+                                    .attr("selected", 0)
+        }else if(d3.selectAll("[name="+d+"]").attr("selected") == 0){
+        d3.selectAll("[name="+d+"]").transition()
+                                    .style("opacity", 1)
+                                    .attr("selected", 1)
+        }
+        
+        if(d3.selectAll("#"+d).attr("selected") == 1){
+            d3.selectAll("#"+d).transition().duration(800)
+                    .style("opacity", 0)
+                    .attr("selected", 0)          
+        
+        if($.inArray(d,arr)==-1){
+                    arr.push(d);
+            }
+            
+        }else if(d3.selectAll("#"+d).attr("selected") == 0){
+            d3.selectAll("#"+d).transition().duration(800)
+                    .attr("selected", 1)
+                    .style("opacity", 1)
+        
+        var ind = arr.indexOf(d);
+        if(ind > -1) arr.splice(ind,1);
+            
+        };                    
+        console.log(arr);
+        output(arr);
+        }
+    
+    var out =[];
+    out.push("scatter");
+    
+    function output(arr){
+        for(i=0; i<arr.length;i++){
+            out.push("food != '"+arr[i]+"'");
+        }
+        console.log(out);
+        runsql(out);
+        
+    }
+    
+    
+        
     // draw legend text
     legend.append("text")
             .attr("x", w - 24)
@@ -126,3 +189,5 @@ d3.json("data/BirdsFinal.json",function(dataset){
             .text(function(d) { return d;})
         
 });
+
+   

@@ -23,7 +23,13 @@
     border-image-outset: 0 0 0 0;
     border-image-repeat: stretch stretch;
     }
-}
+    
+/*div.scatter{
+    position: relative;
+} 
+div.tooltip{
+    position: absolute;
+}*/
 div.bar {
     display: inline-block;
     width: 20px;
