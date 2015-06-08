@@ -24,20 +24,6 @@
     border-image-repeat: stretch stretch;
     }
 }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-/*
-#cvsmaps {
-	height: 100%;
-	margin: 0px;
-	padding: 0px
-}*/
-=======
-=======
->>>>>>> origin/master
->>>>>>> Stashed changes
 div.bar {
     display: inline-block;
     width: 20px;
@@ -73,13 +59,4 @@ p{
 }
 circle.inactive {
   fill: grey;
-<<<<<<< Updated upstream
 }
-=======
-<<<<<<< HEAD
-}
->>>>>>> origin/master
-=======
-}
->>>>>>> origin/master
->>>>>>> Stashed changes
