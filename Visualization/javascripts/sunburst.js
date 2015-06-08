@@ -5,10 +5,18 @@ var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
-  w: 75, h: 30, s: 3, t: 10
+  w: 150, h: 30, s: 3, t: 10
 };
 
+
+var x = d3.scale.linear()
+    .range([0, 2 * Math.PI]);
+
+var y = d3.scale.sqrt()
+    .range([0, radius]);
+
 // Mapping of step names to colors.
+
 var colors = {
   "Least Concern": "#5687d1",
   "Near Threatened": "#7b615c",
@@ -25,18 +33,16 @@ var vis = d3.select("#sunburst").append("svg:svg")
     .attr("width", '100%')
     .attr("height", height)
     .append("svg:g")
-    .attr("id", "container")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 var partition = d3.layout.partition()
-    .size([2 * Math.PI, radius * radius])
     .value(function(d) { return d.size; });
 
 var arc = d3.svg.arc()
-    .startAngle(function(d) { return d.x; })
-    .endAngle(function(d) { return d.x + d.dx; })
-    .innerRadius(function(d) { return Math.sqrt(d.y); })
-    .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); });
+    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
+    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
 
 // Use d3.text and d3.csv.parseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.
@@ -46,42 +52,59 @@ d3.text("data/sequence.csv", function(text) {
   createVisualization(json);
 });
 
+function stash(d) {
+  d.x0 = d.x;
+  d.dx0 = d.dx;
+}
+
 // Main function to draw and set up the visualization, once we have the data.
 function createVisualization(json) {
 
   // Basic setup of page elements.
   initializeBreadcrumbTrail();
 
-  // Bounding circle underneath the sunburst, to make it easier to detect
-  // when the mouse leaves the parent g.
-  vis.append("svg:circle")
-      .attr("r", radius)
-      .style("opacity", 0);
-
-  // For efficiency, filter nodes to keep only those large enough to see.
-  var nodes = partition.nodes(json)
-      .filter(function(d) {
-      return (d.dx > 0.005); // 0.005 radians = 0.29 degrees
-      });
-
   var path = vis.data([json]).selectAll("path")
-      .data(nodes)
+      .data(partition.nodes(json))
       .enter().append("svg:path")
-      .attr("display", function(d) { return d.depth ? null : "none"; })
+      .filter(function(d) {
+          return (d.dx > 0.002); // 0.005 radians = 0.29 degrees
+        })
+    //  .attr("display", function(d) { return d.depth ? null : "none"; })
       .attr("d", arc)
       .attr("fill-rule", "evenodd")
       .style("fill", function(d) { return colors[d.name]; })
       .style("opacity", 1)
-      .on("mouseover", mouseover);
+      .on("mouseover", mouseover)
+      .on("click", click)
+      .each(stash);
+
+      function click(d) {
+        path.transition()
+          .duration(750)
+          .attrTween("d", arcTween(d))
+      }
 
   // Add the mouseleave handler to the bounding circle.
-  d3.select("#container").on("mouseleave", mouseleave);
+  d3.select("#main").on("mouseleave", mouseleave);
 
   // Get total size of the tree = value of root node from partition.
   totalSize = path.node().__data__.value;
  };
 
+
+ function arcTween(d) {
+  var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+      yd = d3.interpolate(y.domain(), [d.y, 1]),
+      yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+  return function(d, i) {
+    return i
+        ? function(t) { return arc(d); }
+        : function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); return arc(d); };
+  };
+}
+
 // Fade all but the current sequence, and show it in the breadcrumb trail.
+
 function mouseover(d) {
 
   var percentage = (100 * d.value / totalSize).toPrecision(3);
@@ -136,6 +159,7 @@ function mouseleave(d) {
 
 // Given a node in a partition layout, return an array of all of its ancestor
 // nodes, highest first, but excluding the root.
+
 function getAncestors(node) {
   var path = [];
   var current = node;
@@ -152,10 +176,7 @@ function initializeBreadcrumbTrail() {
       .attr("width", width)
       .attr("height", 50)
       .attr("id", "trail");
-  // Add the label at the end, for the percentage.
-  trail.append("svg:text")
-    .attr("id", "endlabel")
-    .style("fill", "#000");
+
 }
 
 // Generate a string that describes the points of a breadcrumb polygon.
@@ -201,14 +222,6 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 
   // Remove exiting nodes.
   g.exit().remove();
-
-  // Now move and update the percentage at the end.
-  d3.select("#trail").select("#endlabel")
-      .attr("x", (nodeArray.length + 0.5) * (b.w + b.s))
-      .attr("y", b.h / 2)
-      .attr("dy", "0.35em")
-      .attr("text-anchor", "middle")
-      .text(percentageString);
 
   // Make the breadcrumb trail visible, if it's hidden.
   d3.select("#trail")
