@@ -23,12 +23,22 @@
     border-image-outset: 0 0 0 0;
     border-image-repeat: stretch stretch;
     }
+<<<<<<< HEAD
 }
 
 #map, #cvsmaps{
 	height: 800px;
 }
 
+=======
+    
+/*div.scatter{
+    position: relative;
+} 
+div.tooltip{
+    position: absolute;
+}*/
+>>>>>>> github/Ina
 div.bar {
     display: inline-block;
     width: 20px;

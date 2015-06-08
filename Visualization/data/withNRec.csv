@@ -1,0 +1,581 @@
+name,numRecordings,habitat,food,nesting,conservation,AvgWingspan,AvgLength,AvgWeight,order 2,family 2
+Abert's Towhee,66,Deserts,Insects,Tree,Least Concern,28,22,47, PASSERIFORMES, EMBERIZIDAE
+Acorn Woodpecker,98,Open Woodland,Insects,Cavity,Least Concern,39,21,77.5, PICIFORMES, PICIDAE
+African Collared-Dove,0,Open Woodland,Seeds,Tree,Least Concern,47.5,26.5,148, COLUMBIFORMES, COLUMBIDAE
+Alder Flycatcher,172,Scrub,Insects,Shrub,Least Concern,22.5,15,13, PASSERIFORMES, TYRANNIDAE
+Allen's Hummingbird,12,Open Woodland,Nectar,Shrub,Least Concern,11,9,3, APODIFORMES, TROCHILIDAE
+Altamira Oriole,37,Open Woodland,Insects,Tree,Least Concern,36,23,55.5, PASSERIFORMES, ICTERIDAE
+American Avocet,19,Marsh,Insects,Ground,Least Concern,72,45,312.5, CHARADRIIFORMES, RECURVIROSTRIDAE
+American Bittern,35,Marsh,Fish,Ground,Least Concern,92,72.5,435, PELECANIFORMES, ARDEIDAE
+American Black Duck,10,Lake/Pond,Insects,Ground,Least Concern,91.5,56.5,1180, ANSERIFORMES, ANATIDAE
+American Coot,89,Lake/Pond,Plants,Floating,Least Concern,60.95,41.15,650, GRUIFORMES, RALLIDAE
+American Crow,137,Open Woodland,Omnivore,Tree,Least Concern,92.5,46.5,468, PASSERIFORMES, CORVIDAE
+American Dipper,10,River/Stream,Insects,Cliff,Least Concern,23,17,55, PASSERIFORMES, CINCLIDAE
+American Golden-Plover,0,Grassland,Insects,Ground,Least Concern,57,26,158, CHARADRIIFORMES, CHARADRIIDAE
+American Goldfinch,114,Open Woodland,Seeds,Shrub,Least Concern,20.5,12,15.5, PASSERIFORMES, FRINGILLIDAE
+American Kestrel,45,Open Woodland,Insects,Cavity,Least Concern,56,26.5,122.5, FALCONIFORMES, FALCONIDAE
+American Oystercatcher,27,Shore-line,Insects,Ground,Least Concern,81,42,550, CHARADRIIFORMES, HAEMATOPODIDAE
+American Pipit,0,Grassland,Insects,Ground,Least Concern,27,15.5,22.5, PASSERIFORMES, MOTACILLIDAE
+American Redstart,184,Forest,Insects,Tree,Least Concern,17.5,12,7.5, PASSERIFORMES, PARULIDAE
+American Robin,282,Open Woodland,Insects,Tree,Least Concern,35.5,24,81, PASSERIFORMES, TURDIDAE
+American Three-toed Woodpecker,36,Forest,Insects,Cavity,Least Concern,38,20,65, PICIFORMES, PICIDAE
+American Tree Sparrow,60,Open Woodland,Seeds,Ground,Least Concern,24,14,20.5, PASSERIFORMES, EMBERIZIDAE
+American White Pelican,5,Lake/Pond,Fish,Ground,Least Concern,267,146,6750, PELECANIFORMES, PELECANIDAE
+American Wigeon,27,Lake/Pond,Plants,Ground,Least Concern,84,50.5,935, ANSERIFORMES, ANATIDAE
+American Woodcock,55,Forest,Insects,Ground,Least Concern,45,28,197.5, CHARADRIIFORMES, SCOLOPACIDAE
+Ancient Murrelet,3,Ocean,Fish,Burrow,Least Concern,45.5,22,201.5, CHARADRIIFORMES, ALCIDAE
+Anhinga,46,Marsh,Fish,Shrub,Least Concern,109,85,1337.5, SULIFORMES, ANHINGIDAE
+Anna's Hummingbird,110,Open Woodland,Nectar,Tree,Least Concern,12,10,4.5, APODIFORMES, TROCHILIDAE
+Arctic Tern,68,Shore-line,Fish,Ground,Least Concern,70,33.5,105, CHARADRIIFORMES, LARIDAE
+Arctic Warbler,68,Forest,Insects,Ground,Least Concern,20,12,10, PASSERIFORMES, PHYLLOSCOPIDAE
+Arizona Woodpecker,30,Open Woodland,Insects,Cavity,Least Concern,36,19,42.5, PICIFORMES, PICIDAE
+Ash-throated Flycatcher,115,Open Woodland,Insects,Cavity,Least Concern,31,20,29.5, PASSERIFORMES, TYRANNIDAE
+Audubon's Oriole,17,Open Woodland,Insects,Tree,Least Concern,32,21.5,42, PASSERIFORMES, ICTERIDAE
+Baird's Sandpiper,34,Shore-line,Insects,Ground,Least Concern,36.5,16,45, CHARADRIIFORMES, SCOLOPACIDAE
+Baird's Sparrow,35,Grassland,Seeds,Ground,Least Concern,23,12,19, PASSERIFORMES, EMBERIZIDAE
+Bald Eagle,38,Forest,Fish,Tree,Least Concern,204,83.5,4650, ACCIPITRIFORMES, ACCIPITRIDAE
+Baltimore Oriole,127,Open Woodland,Insects,Tree,Least Concern,26.5,18,35, PASSERIFORMES, ICTERIDAE
+Band-tailed Pigeon,56,Forest,Seeds,Tree,Least Concern,68,36.5,353, COLUMBIFORMES, COLUMBIDAE
+Bank Swallow,0,Lake/Pond,Insects,Burrow,Least Concern,27,13,14.5, PASSERIFORMES, HIRUNDINIDAE
+Barn Owl,0,Grassland,Mammals,Building,Least Concern,112.5,36,550, STRIGIFORMES, TYTONIDAE
+Barn Swallow,397,Town,Insects,Building,Least Concern,30.5,17,18.5, PASSERIFORMES, HIRUNDINIDAE
+Barred Owl,0,Forest,Mammals,Tree,Least Concern,104.5,46.5,760, STRIGIFORMES, STRIGIDAE
+Barrow's Goldeneye,17,Lake/Pond,Insects,Cavity,Least Concern,76,45.5,900, ANSERIFORMES, ANATIDAE
+Bay-breasted Warbler,53,Forest,Insects,Tree,Least Concern,21,14,13.5, PASSERIFORMES, PARULIDAE
+Bell's Sparrow,49,Scrub,Insects,Shrub,Least Concern,21,13.5,18.5, PASSERIFORMES, EMBERIZIDAE
+Bell's Vireo,92,Scrub,Insects,Shrub,Near Threatened,18,11.5,8.5, PASSERIFORMES, VIREONIDAE
+Belted Kingfisher,40,Lake/Pond,Fish,Burrow,Least Concern,53,31.5,155, CORACIIFORMES, ALCEDINIDAE
+Bendire's Thrasher,15,Deserts,Insects,Shrub,Vulnerable,35,24,60, PASSERIFORMES, MIMIDAE
+Bewick's Wren,338,Open Woodland,Insects,Cavity,Least Concern,14,13,10, PASSERIFORMES, TROGLODYTIDAE
+Bicknell's Thrush,41,Forest,Insects,Shrub,Vulnerable,25,16.5,28, PASSERIFORMES, TURDIDAE
+Black-and-white Warbler,139,Forest,Insects,Ground,Least Concern,20,12,11.5, PASSERIFORMES, PARULIDAE
+Black-backed Woodpecker,21,Forest,Insects,Cavity,Least Concern,43,23,74.5, PICIFORMES, PICIDAE
+Black-bellied Plover,0,Shore-line,Insects,Ground,Least Concern,59.5,28.5,218.5, CHARADRIIFORMES, CHARADRIIDAE
+Black-bellied Whistling-Duck,0,Marsh,Plants,Cavity,Least Concern,86,49,836, ANSERIFORMES, ANATIDAE
+Black-billed Cuckoo,37,Forest,Insects,Tree,Least Concern,37,29.5,52.5, CUCULIFORMES, CUCULIDAE
+Black-billed Magpie,27,Open Woodland,Omnivore,Tree,Least Concern,58.5,52.5,177.5, PASSERIFORMES, CORVIDAE
+Blackburnian Warbler,113,Forest,Insects,Tree,Least Concern,20.5,11.5,11, PASSERIFORMES, PARULIDAE
+Black-capped Chickadee,111,Forest,Insects,Cavity,Least Concern,18.5,13.5,11.5, PASSERIFORMES, PARIDAE
+Black-capped Vireo,35,Scrub,Insects,Tree,Vulnerable,18,11,9, PASSERIFORMES, VIREONIDAE
+Black-chinned Hummingbird,67,Open Woodland,Nectar,Tree,Least Concern,11,9,3.15, APODIFORMES, TROCHILIDAE
+Black-crested Titmouse,32,Forest,Insects,Cavity,Least Concern,24,15,26, PASSERIFORMES, PARIDAE
+Black-crowned Night-Heron,0,Marsh,Fish,Tree,Least Concern,116.5,62,870.5, PELECANIFORMES, ARDEIDAE
+Black-footed Albatross,21,Ocean,Fish,Ground,Vulnerable,204.5,69,3250, PROCELLARIIFORMES, DIOMEDEIDAE
+Black Guillemot,4,Ocean,Fish,Cliff,Least Concern,55,31,402.5, CHARADRIIFORMES, ALCIDAE
+Black-headed Grosbeak,101,Forest,Insects,Tree,Least Concern,32,18.5,42, PASSERIFORMES, CARDINALIDAE
+Black-headed Gull,216,Lake/Pond,Omnivore,Ground,Least Concern,105,35.5,295, CHARADRIIFORMES, LARIDAE
+Black-legged Kittiwake,37,Ocean,Fish,Cliff,Least Concern,94,39.5,415, CHARADRIIFORMES, LARIDAE
+Black-necked Stilt,87,Shore-line,Insects,Ground,Least Concern,71,37,178, CHARADRIIFORMES, RECURVIROSTRIDAE
+Black Oystercatcher,9,Shore-line,Insects,Ground,Least Concern,81,44.5,600, CHARADRIIFORMES, HAEMATOPODIDAE
+Black Phoebe,68,Open Woodland,Insects,Cliff,Least Concern,27,16,18.5, PASSERIFORMES, TYRANNIDAE
+Blackpoll Warbler,104,Forest,Insects,Tree,Least Concern,22,14,12.5, PASSERIFORMES, PARULIDAE
+Black Rail,57,Marsh,Insects,Ground,Near Threatened,25,12.5,29, GRUIFORMES, RALLIDAE
+Black Rosy-Finch,0,Mountains,Seeds,Ground,Least Concern,33,15,27, PASSERIFORMES, FRINGILLIDAE
+Black Scoter,9,Ocean,Insects,Ground,Near Threatened,84,48,1066, ANSERIFORMES, ANATIDAE
+Black Skimmer,46,Shore-line,Fish,Ground,Least Concern,112,45,329.5, CHARADRIIFORMES, LARIDAE
+Black-tailed Gnatcatcher,45,Scrub,Insects,Shrub,Least Concern,14.5,12,5.55, PASSERIFORMES, POLIOPTILIDAE
+Black Tern,74,Marsh,Insects,Floating,Least Concern,58.5,24.5,55, CHARADRIIFORMES, LARIDAE
+Black-throated Blue Warbler,80,Forest,Insects,Shrub,Least Concern,18.5,12,10, PASSERIFORMES, PARULIDAE
+Black-throated Gray Warbler,0,Forest,Insects,Tree,Least Concern,19,12,8.5, PASSERIFORMES, PARULIDAE
+Black-throated Green Warbler,89,Forest,Insects,Tree,Least Concern,18.5,11.5,9, PASSERIFORMES, PARULIDAE
+Black-throated Sparrow,105,Scrub,Insects,Shrub,Least Concern,22,13,13, PASSERIFORMES, EMBERIZIDAE
+Black Turnstone,15,Shore-line,Insects,Ground,Least Concern,43,23.5,135, CHARADRIIFORMES, SCOLOPACIDAE
+Black Vulture,22,Open Woodland,Carrion,Cliff,Least Concern,143.5,64,1900, ACCIPITRIFORMES, CATHARTIDAE
+Black-whiskered Vireo,46,Forest,Insects,Tree,Least Concern,25,15.5,19.5, PASSERIFORMES, VIREONIDAE
+Blue-footed Booby,3,Ocean,Fish,Ground,Least Concern,158,81,1850, SULIFORMES, SULIDAE
+Blue-gray Gnatcatcher,0,Forest,Insects,Tree,Least Concern,16,10.5,6, PASSERIFORMES, POLIOPTILIDAE
+Blue Grosbeak,70,Open Woodland,Insects,Shrub,Least Concern,28,15.5,28.5, PASSERIFORMES, CARDINALIDAE
+Blue-headed Vireo,89,Forest,Insects,Tree,Least Concern,22,14,16, PASSERIFORMES, VIREONIDAE
+Blue Jay,165,Forest,Omnivore,Tree,Least Concern,38.5,27.5,85, PASSERIFORMES, CORVIDAE
+Bluethroat,242,Mountains,Insects,Ground,Least Concern,23,14,18.5, PASSERIFORMES, MUSCICAPIDAE
+Blue-throated Hummingbird,0,Open Woodland,Nectar,Shrub,Least Concern,19,11.5,7, APODIFORMES, TROCHILIDAE
+Blue-winged Teal,56,Lake/Pond,Seeds,Ground,Least Concern,59,38.5,387.5, ANSERIFORMES, ANATIDAE
+Blue-winged Warbler,70,Open Woodland,Insects,Ground,Least Concern,15,11.5,9, PASSERIFORMES, PARULIDAE
+Boat-tailed Grackle,59,Marsh,Omnivore,Tree,Least Concern,44.5,31.5,166, PASSERIFORMES, ICTERIDAE
+Bobolink,99,Grassland,Insects,Ground,Least Concern,27,18,42.5, PASSERIFORMES, ICTERIDAE
+Bohemian Waxwing,95,Forest,Insects,Tree,Least Concern,33,17.5,57, PASSERIFORMES, BOMBYCILLIDAE
+Bonaparte's Gull,24,Lake/Pond,Insects,Tree,Least Concern,78,33,202.5, CHARADRIIFORMES, LARIDAE
+Boreal Chickadee,34,Forest,Insects,Tree,Least Concern,20,13,9.5, PASSERIFORMES, PARIDAE
+Boreal Owl,120,Forest,Mammals,Cavity,Least Concern,58.5,24.5,154, STRIGIFORMES, STRIGIDAE
+Botteri's Sparrow,95,Grassland,Insects,Ground,Least Concern,22,16,21.5, PASSERIFORMES, EMBERIZIDAE
+Brandt's Cormorant,0,Ocean,Fish,Cliff,Least Concern,108,74.5,2050, SULIFORMES, PHALACROCORACIDAE
+Brant,0,Marsh,Plants,Ground,Least Concern,109,61,1500, ANSERIFORMES, ANATIDAE
+Brewer's Blackbird,35,Town,Seeds,Shrub,Least Concern,21,23,73, PASSERIFORMES, ICTERIDAE
+Bridled Titmouse,30,Forest,Insects,Tree,Least Concern,12,10,10, PASSERIFORMES, PARIDAE
+Broad-billed Hummingbird,39,Scrub,Nectar,Tree,Least Concern,12,10,3.5, APODIFORMES, TROCHILIDAE
+Broad-tailed Hummingbird,79,Open Woodland,Nectar,Tree,Least Concern,13,8.5,3.5, APODIFORMES, TROCHILIDAE
+Broad-winged Hawk,54,Forest,Mammals,Tree,Least Concern,90.5,39,412.5, ACCIPITRIFORMES, ACCIPITRIDAE
+Bronzed Cowbird,21,Town,Insects,Tree,Least Concern,33,20,62.5, PASSERIFORMES, ICTERIDAE
+Brown Booby,5,Ocean,Fish,Ground,Least Concern,143.5,74.5,1375, SULIFORMES, SULIDAE
+Brown-capped Rosy-Finch,0,Mountains,Seeds,Ground,Least Concern,33,15,28, PASSERIFORMES, FRINGILLIDAE
+Brown Creeper,159,Forest,Insects,Tree,Least Concern,18.5,13,7.5, PASSERIFORMES, CERTHIIDAE
+Brown-headed Cowbird,129,Grassland,Seeds,Tree,Least Concern,18,20.5,46, PASSERIFORMES, ICTERIDAE
+Brown-headed Nuthatch,49,Forest,Insects,Cavity,Least Concern,17,10.5,10, PASSERIFORMES, SITTIDAE
+Brown Pelican,2,Ocean,Fish,Tree,Least Concern,200,118.5,3500, PELECANIFORMES, PELECANIDAE
+Brown Thrasher,81,Scrub,Omnivore,Shrub,Least Concern,30.5,26.5,75, PASSERIFORMES, MIMIDAE
+Buff-bellied Hummingbird,15,Open Woodland,Nectar,Tree,Least Concern,14,10.5,3, APODIFORMES, TROCHILIDAE
+Buff-breasted Flycatcher,45,Open Woodland,Insects,Tree,Least Concern,19,13,7.5, PASSERIFORMES, TYRANNIDAE
+Buff-breasted Sandpiper,5,Grassland,Insects,Ground,Near Threatened,41,19,62, CHARADRIIFORMES, SCOLOPACIDAE
+Bufflehead,7,Lake/Pond,Insects,Cavity,Least Concern,55,36,453.5, ANSERIFORMES, ANATIDAE
+Bullock's Oriole,29,Open Woodland,Insects,Tree,Least Concern,31,18,36, PASSERIFORMES, ICTERIDAE
+Burrowing Owl,77,Grassland,Insects,Burrow,Least Concern,55,22,150, STRIGIFORMES, STRIGIDAE
+Bushtit,123,Scrub,Insects,Tree,Least Concern,15,7.5,5, PASSERIFORMES, AEGITHALIDAE
+Cackling Goose,19,Lake/Pond,Plants,Ground,Least Concern,109,65,1975, ANSERIFORMES, ANATIDAE
+Cactus Wren,62,Deserts,Insects,Shrub,Least Concern,27,20,39.5, PASSERIFORMES, TROGLODYTIDAE
+California Condor,0,Mountains,Carrion,Cliff,Critically Endangered,277,125.5,8450, ACCIPITRIFORMES, CATHARTIDAE
+California Gull,32,Lake/Pond,Insects,Ground,Least Concern,130,50.5,737.5, CHARADRIIFORMES, LARIDAE
+California Quail,55,Scrub,Seeds,Ground,Least Concern,34.5,25.5,185, GALLIFORMES, ODONTOPHORIDAE
+California Thrasher,35,Scrub,Insects,Shrub,Least Concern,31,32,85.5, PASSERIFORMES, MIMIDAE
+California Towhee,47,Scrub,Seeds,Shrub,Least Concern,29,23,52, PASSERIFORMES, EMBERIZIDAE
+Calliope Hummingbird,25,Open Woodland,Nectar,Tree,Least Concern,11,9,2.5, APODIFORMES, TROCHILIDAE
+Canada Goose,140,Marsh,Seeds,Ground,Least Concern,148.5,93,6000, ANSERIFORMES, ANATIDAE
+Canada Warbler,105,Forest,Insects,Ground,Least Concern,19.5,13.5,11, PASSERIFORMES, PARULIDAE
+Canvasback,7,Lake/Pond,Plants,Floating,Least Concern,84,52,1225, ANSERIFORMES, ANATIDAE
+Canyon Wren,77,Mountains,Insects,Cliff,Least Concern,19,13,13.5, PASSERIFORMES, TROGLODYTIDAE
+Cape May Warbler,59,Forest,Insects,Tree,Least Concern,20.5,12.5,10.5, PASSERIFORMES, PARULIDAE
+Carolina Chickadee,91,Forest,Omnivore,Cavity,Least Concern,17.5,11,10, PASSERIFORMES, PARIDAE
+Carolina Wren,217,Open Woodland,Insects,Cavity,Least Concern,29,13,20, PASSERIFORMES, TROGLODYTIDAE
+Caspian Tern,55,Shore-line,Fish,Ground,Least Concern,127.5,50.5,656, CHARADRIIFORMES, LARIDAE
+Cassin's Auklet,2,Ocean,Insects,Burrow,Least Concern,38,23,175, CHARADRIIFORMES, ALCIDAE
+Cassin's Finch,83,Forest,Seeds,Tree,Near Threatened,26,16,29, PASSERIFORMES, FRINGILLIDAE
+Cassin's Kingbird,75,Open Woodland,Insects,Tree,Least Concern,38,22,45, PASSERIFORMES, TYRANNIDAE
+Cassin's Sparrow,83,Grassland,Insects,Ground,Least Concern,20,14,17.5, PASSERIFORMES, EMBERIZIDAE
+Cassin's Vireo,73,Forest,Insects,Tree,Least Concern,24,12.5,15.5, PASSERIFORMES, VIREONIDAE
+Cattle Egret,0,Marsh,Insects,Tree,Least Concern,92,51,391, PELECANIFORMES, ARDEIDAE
+Cave Swallow,16,Grassland,Insects,Building,Least Concern,30,14,21, PASSERIFORMES, HIRUNDINIDAE
+Cedar Waxwing,54,Open Woodland,Fruit,Tree,Least Concern,26,15.5,32, PASSERIFORMES, BOMBYCILLIDAE
+Cerulean Warbler,58,Forest,Insects,Tree,Vulnerable,20,11,9, PASSERIFORMES, PARULIDAE
+Chestnut-backed Chickadee,74,Forest,Insects,Cavity,Least Concern,19,11,9.5, PASSERIFORMES, PARIDAE
+Chestnut-collared Longspur,29,Grassland,Insects,Ground,Near Threatened,27,15,20.5, PASSERIFORMES, CALCARIIDAE
+Chestnut-sided Warbler,106,Open Woodland,Insects,Shrub,Least Concern,19.5,10.5,11, PASSERIFORMES, PARULIDAE
+Chihuahuan Raven,12,Scrub,Omnivore,Tree,Least Concern,107,49.5,525, PASSERIFORMES, CORVIDAE
+Chimney Swift,22,Town,Insects,Building,Near Threatened,28.5,13.5,23.5, APODIFORMES, APODIDAE
+Chipping Sparrow,136,Open Woodland,Seeds,Shrub,Least Concern,21,13.5,13.5, PASSERIFORMES, EMBERIZIDAE
+Chuck-will's-widow,63,Open Woodland,Insects,Ground,Least Concern,59.5,30,127, CAPRIMULGIFORMES, CAPRIMULGIDAE
+Chukar,14,Mountains,Seeds,Ground,Least Concern,51,36,612.5, GALLIFORMES, PHASIANIDAE
+Cinnamon Teal,9,Lake/Pond,Seeds,Ground,Least Concern,61,39.5,390, ANSERIFORMES, ANATIDAE
+Clapper Rail,107,Marsh,Insects,Ground,Least Concern,48,36.5,280, GRUIFORMES, RALLIDAE
+Clark's Grebe,7,Marsh,Fish,Floating,Least Concern,81.5,65,1201.5, PODICIPEDIFORMES, PODICIPEDIDAE
+Clark's Nutcracker,39,Forest,Omnivore,Tree,Least Concern,61,28.5,133.5, PASSERIFORMES, CORVIDAE
+Cliff Swallow,0,Lake/Pond,Insects,Cliff,Least Concern,29,13,26.5, PASSERIFORMES, HIRUNDINIDAE
+Common Eider,36,Ocean,Insects,Ground,Least Concern,89,60.5,2110, ANSERIFORMES, ANATIDAE
+Common Gallinule,134,Marsh,Plants,Floating,Least Concern,58,33.5,383, GRUIFORMES, RALLIDAE
+Common Goldeneye,68,Lake/Pond,Insects,Cavity,Least Concern,80,45.5,950, ANSERIFORMES, ANATIDAE
+Common Grackle,86,Open Woodland,Omnivore,Tree,Least Concern,41,31,108, PASSERIFORMES, ICTERIDAE
+Common Ground-Dove,0,Scrub,Seeds,Ground,Least Concern,27,16.5,34, COLUMBIFORMES, COLUMBIDAE
+Common Loon,0,Lake/Pond,Fish,Ground,Least Concern,117.5,78.5,4300, GAVIIFORMES, GAVIIDAE
+Common Merganser,56,Lake/Pond,Fish,Cavity,Least Concern,86,62.5,1530, ANSERIFORMES, ANATIDAE
+Common Murre,24,Ocean,Fish,Cliff,Least Concern,67.5,40.5,962.5, CHARADRIIFORMES, ALCIDAE
+Common Nighthawk,56,Grassland,Insects,Ground,Least Concern,55,23,81.5, CAPRIMULGIFORMES, CAPRIMULGIDAE
+Common Pauraque,0,Open Woodland,Insects,Ground,Least Concern,61,29,53, CAPRIMULGIFORMES, CAPRIMULGIDAE
+Common Poorwill,37,Scrub,Insects,Ground,Least Concern,43,20,45.5, CAPRIMULGIFORMES, CAPRIMULGIDAE
+Common Raven,0,Mountains,Omnivore,Cliff,Least Concern,117,62.5,1157, PASSERIFORMES, CORVIDAE
+Common Redpoll,151,Open Woodland,Seeds,Shrub,Least Concern,20.5,13,15.5, PASSERIFORMES, FRINGILLIDAE
+Common Tern,128,Shore-line,Fish,Ground,Least Concern,77.5,34.5,146.5, CHARADRIIFORMES, LARIDAE
+Common Yellowthroat,221,Scrub,Insects,Shrub,Least Concern,17,12,9.5, PASSERIFORMES, PARULIDAE
+Connecticut Warbler,34,Forest,Insects,Ground,Least Concern,22,14,15, PASSERIFORMES, PARULIDAE
+Cooper's Hawk,57,Forest,Birds,Tree,Least Concern,43.5,38,315, ACCIPITRIFORMES, ACCIPITRIDAE
+Cordilleran Flycatcher,68,Forest,Insects,Tree,Least Concern,22,15.5,12, PASSERIFORMES, TYRANNIDAE
+Costa's Hummingbird,24,Deserts,Nectar,Shrub,Least Concern,11,9,2.5, APODIFORMES, TROCHILIDAE
+Couch's Kingbird,26,Open Woodland,Insects,Tree,Least Concern,38,22,40, PASSERIFORMES, TYRANNIDAE
+Crested Caracara,0,Deserts,Small_Animals,Tree,Least Concern,120,53.5,1175, FALCONIFORMES, FALCONIDAE
+Crissal Thrasher,27,Scrub,Insects,Shrub,Least Concern,32,30,61.5, PASSERIFORMES, MIMIDAE
+Curve-billed Thrasher,61,Scrub,Insects,Shrub,Least Concern,34,27,85, PASSERIFORMES, MIMIDAE
+Dark-eyed Junco,241,Forest,Seeds,Ground,Least Concern,21.5,15,24, PASSERIFORMES, EMBERIZIDAE
+Dickcissel,79,Grassland,Seeds,Shrub,Least Concern,25,15,26, PASSERIFORMES, CARDINALIDAE
+Double-crested Cormorant,33,Lake/Pond,Fish,Ground,Least Concern,118.5,80,1850, SULIFORMES, PHALACROCORACIDAE
+Dovekie,0,Ocean,Insects,Cliff,Least Concern,38,21,169, CHARADRIIFORMES, ALCIDAE
+Downy Woodpecker,110,Forest,Insects,Cavity,Least Concern,27.5,15.5,24.5, PICIFORMES, PICIDAE
+Dunlin,91,Shore-line,Insects,Ground,Least Concern,37,19,56, CHARADRIIFORMES, SCOLOPACIDAE
+Dusky Flycatcher,0,Open Woodland,Insects,Shrub,Least Concern,21.5,14,10, PASSERIFORMES, TYRANNIDAE
+Dusky Grouse,4,Forest,Plants,Ground,Least Concern,66,45,1025, GALLIFORMES, PHASIANIDAE
+Eared Grebe,0,Lake/Pond,Insects,Floating,Least Concern,53.5,32.5,467.5, PODICIPEDIFORMES, PODICIPEDIDAE
+Eastern Bluebird,55,Grassland,Insects,Cavity,Least Concern,28.5,18.5,30, PASSERIFORMES, TURDIDAE
+Eastern Kingbird,65,Grassland,Insects,Tree,Least Concern,35.5,21,44, PASSERIFORMES, TYRANNIDAE
+Eastern Meadowlark,162,Grassland,Insects,Ground,Least Concern,37.5,22.5,120, PASSERIFORMES, ICTERIDAE
+Eastern Phoebe,57,Open Woodland,Insects,Building,Least Concern,27,15.5,18.5, PASSERIFORMES, TYRANNIDAE
+Eastern Screech-Owl,0,Forest,Insects,Cavity,Least Concern,54.5,20.5,182.5, STRIGIFORMES, STRIGIDAE
+Eastern Towhee,122,Scrub,Omnivore,Ground,Least Concern,24,19.05,42, PASSERIFORMES, EMBERIZIDAE
+Eastern Whip-poor-will,47,Open Woodland,Insects,Ground,Least Concern,46.5,24,53.5, CAPRIMULGIFORMES, CAPRIMULGIDAE
+Eastern Wood-Pewee,0,Forest,Insects,Tree,Least Concern,24.5,15,14.5, PASSERIFORMES, TYRANNIDAE
+Elegant Tern,7,Shore-line,Fish,Ground,Near Threatened,107,40.5,257.5, CHARADRIIFORMES, LARIDAE
+Emperor Goose,5,Marsh,Plants,Ground,Near Threatened,122,68.5,2813, ANSERIFORMES, ANATIDAE
+Eurasian Collared-Dove,0,Town,Seeds,Tree,Least Concern,35,29.5,160, COLUMBIFORMES, COLUMBIDAE
+Eurasian Tree Sparrow,479,Town,Seeds,Cavity,Least Concern,21,14.5,23, PASSERIFORMES, PASSERIDAE
+Eurasian Wigeon,66,Lake/Pond,Plants,Ground,Least Concern,76,47,725, ANSERIFORMES, ANATIDAE
+Evening Grosbeak,63,Forest,Seeds,Tree,Least Concern,33,17,63.5, PASSERIFORMES, FRINGILLIDAE
+Ferruginous Hawk,3,Grassland,Mammals,Tree,Least Concern,137.5,62.5,1525.5, ACCIPITRIFORMES, ACCIPITRIDAE
+Field Sparrow,84,Scrub,Insects,Ground,Least Concern,20,13.5,13, PASSERIFORMES, EMBERIZIDAE
+Fish Crow,48,Shore-line,Omnivore,Tree,Least Concern,84,38,262.5, PASSERIFORMES, CORVIDAE
+Flammulated Owl,30,Forest,Insects,Cavity,Least Concern,41,16,54, STRIGIFORMES, STRIGIDAE
+Florida Scrub-Jay,0,Scrub,Omnivore,Tree,Vulnerable,34.5,25.5,79, PASSERIFORMES, CORVIDAE
+Fork-tailed Storm-Petrel,0,Ocean,Fish,Cliff,Least Concern,46,20,65, PROCELLARIIFORMES, HYDROBATIDAE
+Forster's Tern,35,Marsh,Fish,Floating,Least Concern,79,34.5,160, CHARADRIIFORMES, LARIDAE
+Franklin's Gull,27,Lake/Pond,Omnivore,Floating,Least Concern,90,34,277.5, CHARADRIIFORMES, LARIDAE
+Fulvous Whistling-Duck,0,Marsh,Plants,Ground,Least Concern,91,47.5,779.5, ANSERIFORMES, ANATIDAE
+Gadwall,63,Marsh,Plants,Ground,Least Concern,84,51.5,875, ANSERIFORMES, ANATIDAE
+Gambel's Quail,35,Scrub,Seeds,Ground,Least Concern,35,25,180, GALLIFORMES, ODONTOPHORIDAE
+Gila Woodpecker,37,Deserts,Omnivore,Cavity,Least Concern,41,24,65, PICIFORMES, PICIDAE
+Gilded Flicker,20,Deserts,Insects,Cavity,Least Concern,48,28,110.5, PICIFORMES, PICIDAE
+Glaucous Gull,21,Shore-line,Omnivore,Cliff,Least Concern,165.5,68,1975, CHARADRIIFORMES, LARIDAE
+Glaucous-winged Gull,31,Shore-line,Omnivore,Cliff,Least Concern,131.5,54.5,1050, CHARADRIIFORMES, LARIDAE
+Glossy Ibis,16,Marsh,Insects,Ground,Least Concern,91,57,650, PELECANIFORMES, THRESKIORNITHIDAE
+Golden-cheeked Warbler,19,Forest,Insects,Tree,Endangered,20,12.5,11, PASSERIFORMES, PARULIDAE
+Golden-crowned Kinglet,105,Forest,Insects,Tree,Least Concern,16,9.5,6, PASSERIFORMES, REGULIDAE
+Golden-crowned Sparrow,79,Scrub,Insects,Ground,Least Concern,25,16.5,31.5, PASSERIFORMES, EMBERIZIDAE
+Golden Eagle,7,Grassland,Mammals,Cliff,Least Concern,202.5,77,4562.5, ACCIPITRIFORMES, ACCIPITRIDAE
+Golden-fronted Woodpecker,44,Open Woodland,Insects,Cavity,Least Concern,43,24,83.5, PICIFORMES, PICIDAE
+Golden-winged Warbler,75,Open Woodland,Insects,Ground,Near Threatened,19,13,9.5, PASSERIFORMES, PARULIDAE
+Grace's Warbler,42,Forest,Insects,Tree,Least Concern,20,12,8, PASSERIFORMES, PARULIDAE
+Grasshopper Sparrow,94,Grassland,Insects,Ground,Least Concern,20,11.5,17, PASSERIFORMES, EMBERIZIDAE
+Gray Catbird,0,Open Woodland,Insects,Shrub,Least Concern,26,22.5,39.6, PASSERIFORMES, MIMIDAE
+Gray-cheeked Thrush,0,Forest,Insects,Shrub,Least Concern,29,16.5,28, PASSERIFORMES, TURDIDAE
+Gray-crowned Rosy-Finch,0,Mountains,Seeds,Cliff,Least Concern,33,17.5,41, PASSERIFORMES, FRINGILLIDAE
+Gray Flycatcher,0,Open Woodland,Insects,Shrub,Least Concern,22,14.5,12.5, PASSERIFORMES, TYRANNIDAE
+Gray Partridge,0,Grassland,Seeds,Ground,Least Concern,54.5,31.5,442.5, GALLIFORMES, PHASIANIDAE
+Gray Vireo,0,Scrub,Insects,Shrub,Least Concern,21,14,13.5, PASSERIFORMES, VIREONIDAE
+Great Black-backed Gull,36,Shore-line,Omnivore,Ground,Least Concern,153,75,1650, CHARADRIIFORMES, LARIDAE
+Great Blue Heron,41,Marsh,Fish,Tree,Least Concern,184,117,2300, PELECANIFORMES, ARDEIDAE
+Great Crested Flycatcher,123,Open Woodland,Insects,Cavity,Least Concern,34,19,33.5, PASSERIFORMES, TYRANNIDAE
+Great Egret,108,Marsh,Fish,Tree,Least Concern,138,99,1000, PELECANIFORMES, ARDEIDAE
+Greater Pewee,46,Open Woodland,Insects,Tree,Least Concern,34,18,27, PASSERIFORMES, TYRANNIDAE
+Greater Prairie-Chicken,0,Grassland,Seeds,Ground,Vulnerable,71,43,950, GALLIFORMES, PHASIANIDAE
+Greater Roadrunner,20,Scrub,Omnivore,Tree,Least Concern,49,53,379.5, CUCULIFORMES, CUCULIDAE
+Greater Sage-Grouse,0,Grassland,Plants,Ground,Near Threatened,97,65.5,2150, GALLIFORMES, PHASIANIDAE
+Greater Scaup,12,Lake/Pond,Insects,Ground,Least Concern,75.5,47.5,1043, ANSERIFORMES, ANATIDAE
+Greater White-fronted Goose,76,Lake/Pond,Plants,Ground,Least Concern,135,72.5,2631, ANSERIFORMES, ANATIDAE
+Greater Yellowlegs,79,Marsh,Insects,Ground,Least Concern,60,31,173, CHARADRIIFORMES, SCOLOPACIDAE
+Great Gray Owl,0,Forest,Mammals,Tree,Least Concern,145,72.5,1200, STRIGIFORMES, STRIGIDAE
+Great Horned Owl,99,Open Woodland,Mammals,Tree,Least Concern,123,54.5,1705, STRIGIFORMES, STRIGIDAE
+Great-tailed Grackle,72,Town,Omnivore,Tree,Least Concern,38,46,190, PASSERIFORMES, ICTERIDAE
+Green Heron,50,Marsh,Fish,Tree,Least Concern,66,43.5,240, PELECANIFORMES, ARDEIDAE
+Green Jay,40,Open Woodland,Omnivore,Tree,Least Concern,34,29,88, PASSERIFORMES, CORVIDAE
+Green-winged Teal,27,Marsh,Seeds,Ground,Least Concern,55.5,35,320, ANSERIFORMES, ANATIDAE
+Groove-billed Ani,56,Scrub,Insects,Tree,Least Concern,43,34,80, CUCULIFORMES, CUCULIDAE
+Gull-billed Tern,46,Shore-line,Insects,Ground,Least Concern,91,35.5,177.5, CHARADRIIFORMES, LARIDAE
+Gunnison Sage-Grouse,0,Grassland,Plants,Ground,Endangered,76,51,1712.5, GALLIFORMES, PHASIANIDAE
+Gyrfalcon,3,Mountains,Birds,Cliff,Least Concern,123,56,1450, FALCONIFORMES, FALCONIDAE
+Hairy Woodpecker,118,Forest,Insects,Cavity,Least Concern,37,22,67.5, PICIFORMES, PICIDAE
+Hammond's Flycatcher,89,Forest,Insects,Tree,Least Concern,22,13,10, PASSERIFORMES, TYRANNIDAE
+Harlequin Duck,12,River/Stream,Insects,Ground,Least Concern,61,43.5,613, ANSERIFORMES, ANATIDAE
+Harris's Hawk,29,Scrub,Mammals,Tree,Least Concern,113.5,52.5,1072.5, ACCIPITRIFORMES, ACCIPITRIDAE
+Harris's Sparrow,43,Forest,Seeds,Ground,Least Concern,27,18.5,37.5, PASSERIFORMES, EMBERIZIDAE
+Heermann's Gull,20,Shore-line,Fish,Ground,Near Threatened,109.5,49.5,507, CHARADRIIFORMES, LARIDAE
+Henslow's Sparrow,46,Grassland,Insects,Ground,Near Threatened,20,12,12.5, PASSERIFORMES, EMBERIZIDAE
+Hepatic Tanager,22,Forest,Insects,Tree,Least Concern,32,20,35, PASSERIFORMES, CARDINALIDAE
+Hermit Thrush,147,Open Woodland,Insects,Ground,Least Concern,27,16,30, PASSERIFORMES, TURDIDAE
+Hermit Warbler,39,Forest,Insects,Tree,Least Concern,20,14,11, PASSERIFORMES, PARULIDAE
+Herring Gull,0,Shore-line,Omnivore,Ground,Least Concern,141.5,61,1025, CHARADRIIFORMES, LARIDAE
+Hoary Redpoll,0,Scrub,Seeds,Shrub,Least Concern,23,13,15.5, PASSERIFORMES, FRINGILLIDAE
+Hooded Merganser,16,Lake/Pond,Fish,Cavity,Least Concern,63,44.5,666, ANSERIFORMES, ANATIDAE
+Hooded Oriole,25,Open Woodland,Insects,Tree,Least Concern,27,19,24, PASSERIFORMES, ICTERIDAE
+Hooded Warbler,114,Forest,Insects,Shrub,Least Concern,20,13,10.5, PASSERIFORMES, PARULIDAE
+Horned Grebe,30,Lake/Pond,Insects,Floating,Least Concern,59.5,34.5,435, PODICIPEDIFORMES, PODICIPEDIDAE
+Horned Lark,97,Grassland,Seeds,Ground,Least Concern,32,18,38, PASSERIFORMES, ALAUDIDAE
+Horned Puffin,1,Ocean,Fish,Cliff,Least Concern,58,38,565.5, CHARADRIIFORMES, ALCIDAE
+House Finch,131,Town,Seeds,Tree,Least Concern,22.5,13.5,21.5, PASSERIFORMES, FRINGILLIDAE
+House Sparrow,541,Town,Seeds,Cavity,Least Concern,22,16,28, PASSERIFORMES, PASSERIDAE
+House Wren,706,Open Woodland,Insects,Cavity,Least Concern,15,12,11, PASSERIFORMES, TROGLODYTIDAE
+Hudsonian Godwit,10,Shore-line,Insects,Ground,Near Threatened,66,39,277, CHARADRIIFORMES, SCOLOPACIDAE
+Hutton's Vireo,90,Forest,Insects,Tree,Least Concern,20,12.5,12, PASSERIFORMES, VIREONIDAE
+Iceland Gull,1,Shore-line,Omnivore,Cliff,Least Concern,126,55,960, CHARADRIIFORMES, LARIDAE
+Inca Dove,28,Town,Seeds,Shrub,Least Concern,28,20.5,44, COLUMBIFORMES, COLUMBIDAE
+Indigo Bunting,97,Open Woodland,Insects,Shrub,Least Concern,20.5,12.5,15, PASSERIFORMES, CARDINALIDAE
+Ivory-billed Woodpecker,0,Forest,Insects,Cavity,Critically Endangered,78,48.5,510, PICIFORMES, PICIDAE
+Ivory Gull,0,Ocean,Fish,Ground,Near Threatened,114,41.5,567.5, CHARADRIIFORMES, LARIDAE
+Juniper Titmouse,30,Open Woodland,Insects,Cavity,Least Concern,18,23,18, PASSERIFORMES, PARIDAE
+Kentucky Warbler,78,Forest,Insects,Ground,Least Concern,20,13,12, PASSERIFORMES, PARULIDAE
+Killdeer,106,Grassland,Insects,Ground,Least Concern,47,24,102, CHARADRIIFORMES, CHARADRIIDAE
+King Eider,6,Ocean,Insects,Ground,Least Concern,89,55.5,1650, ANSERIFORMES, ANATIDAE
+King Rail,38,Marsh,Insects,Ground,Least Concern,50,43,337.5, GRUIFORMES, RALLIDAE
+Kirtland's Warbler,20,Open Woodland,Insects,Ground,Near Threatened,19,14.5,14, PASSERIFORMES, PARULIDAE
+Ladder-backed Woodpecker,49,Deserts,Insects,Cavity,Least Concern,28,17,34.5, PICIFORMES, PICIDAE
+Lapland Longspur,74,Grassland,Insects,Ground,Least Concern,25,15.5,28, PASSERIFORMES, CALCARIIDAE
+Lark Bunting,47,Grassland,Insects,Ground,Least Concern,28,16,40.5, PASSERIFORMES, EMBERIZIDAE
+Lark Sparrow,75,Grassland,Seeds,Ground,Least Concern,28,16,28.5, PASSERIFORMES, EMBERIZIDAE
+Laughing Gull,42,Shore-line,Insects,Ground,Least Concern,106,42.5,287, CHARADRIIFORMES, LARIDAE
+Lawrence's Goldfinch,26,Open Woodland,Seeds,Tree,Least Concern,21,11,11.5, PASSERIFORMES, FRINGILLIDAE
+Lazuli Bunting,39,Open Woodland,Insects,Shrub,Least Concern,22,14,15.5, PASSERIFORMES, CARDINALIDAE
+Least Bittern,51,Marsh,Fish,Ground,Least Concern,43.5,32,76.5, PELECANIFORMES, ARDEIDAE
+Least Flycatcher,130,Forest,Insects,Tree,Least Concern,20,13,10.5, PASSERIFORMES, TYRANNIDAE
+Least Grebe,41,Lake/Pond,Insects,Floating,Least Concern,28,24.5,131.5, PODICIPEDIFORMES, PODICIPEDIDAE
+Least Sandpiper,58,Marsh,Insects,Ground,Least Concern,27.5,14,24.5, CHARADRIIFORMES, SCOLOPACIDAE
+Least Tern,56,Shore-line,Fish,Ground,Least Concern,50.5,22,37.5, CHARADRIIFORMES, LARIDAE
+Le Conte's Sparrow,64,Grassland,Insects,Ground,Least Concern,18,12,14, PASSERIFORMES, EMBERIZIDAE
+Le Conte's Thrasher,22,Scrub,Insects,Shrub,Least Concern,30,26,65.5, PASSERIFORMES, MIMIDAE
+Lesser Black-backed Gull,35,Shore-line,Omnivore,Ground,Least Concern,142.5,58,772.5, CHARADRIIFORMES, LARIDAE
+Lesser Prairie-Chicken,0,Grassland,Insects,Ground,Vulnerable,71,39.5,720.5, GALLIFORMES, PHASIANIDAE
+Lesser Scaup,4,Lake/Pond,Insects,Ground,Least Concern,73,42.5,771.5, ANSERIFORMES, ANATIDAE
+Lesser Yellowlegs,97,Marsh,Insects,Ground,Least Concern,61.5,24,80.5, CHARADRIIFORMES, SCOLOPACIDAE
+Lewis's Woodpecker,12,Open Woodland,Insects,Cavity,Least Concern,50.5,27,113, PICIFORMES, PICIDAE
+Limpkin,95,Marsh,Insects,Ground,Least Concern,104,68.5,1100, GRUIFORMES, ARAMIDAE
+Lincoln's Sparrow,115,Scrub,Insects,Ground,Least Concern,18,14,18, PASSERIFORMES, EMBERIZIDAE
+Little Blue Heron,20,Marsh,Fish,Tree,Least Concern,102.5,65,354, PELECANIFORMES, ARDEIDAE
+Little Gull,13,Lake/Pond,Insects,Ground,Least Concern,61,29.5,125, CHARADRIIFORMES, LARIDAE
+Loggerhead Shrike,60,Open Woodland,Insects,Tree,Least Concern,30,21.5,42.5, PASSERIFORMES, LANIIDAE
+Long-billed Curlew,25,Grassland,Insects,Ground,Least Concern,75.5,57.5,720, CHARADRIIFORMES, SCOLOPACIDAE
+Long-billed Dowitcher,46,Marsh,Insects,Ground,Least Concern,48,29,110.5, CHARADRIIFORMES, SCOLOPACIDAE
+Long-billed Thrasher,26,Scrub,Omnivore,Shrub,Least Concern,33,27.5,68, PASSERIFORMES, MIMIDAE
+Long-eared Owl,172,Forest,Mammals,Tree,Least Concern,95,37.5,327.5, STRIGIFORMES, STRIGIDAE
+Long-tailed Duck,42,Lake/Pond,Insects,Ground,Vulnerable,72,48,800, ANSERIFORMES, ANATIDAE
+Louisiana Waterthrush,85,River/Stream,Insects,Ground,Least Concern,24,14,21, PASSERIFORMES, PARULIDAE
+Lucifer Hummingbird,0,Scrub,Nectar,Shrub,Least Concern,11,9,3.5, APODIFORMES, TROCHILIDAE
+Lucy's Warbler,33,Open Woodland,Insects,Cavity,Least Concern,18,10.5,6.5, PASSERIFORMES, PARULIDAE
+MacGillivray's Warbler,85,Open Woodland,Insects,Shrub,Least Concern,19,12.5,11, PASSERIFORMES, PARULIDAE
+Magnificent Frigatebird,6,Ocean,Fish,Shrub,Least Concern,220.5,101.5,1450, SULIFORMES, FREGATIDAE
+Magnificent Hummingbird,78,Open Woodland,Nectar,Tree,Least Concern,18,12.5,7.5, APODIFORMES, TROCHILIDAE
+Magnolia Warbler,128,Forest,Insects,Tree,Least Concern,18,12,10.5, PASSERIFORMES, PARULIDAE
+Mallard,150,Lake/Pond,Seeds,Ground,Least Concern,88.5,57.5,1150, ANSERIFORMES, ANATIDAE
+Mangrove Cuckoo,14,Forest,Insects,Tree,Least Concern,43,30,67.5, CUCULIFORMES, CUCULIDAE
+Marbled Godwit,34,Marsh,Insects,Ground,Least Concern,76,45,369.5, CHARADRIIFORMES, SCOLOPACIDAE
+Marbled Murrelet,7,Ocean,Fish,Tree,Endangered,41,24.5,307.5, CHARADRIIFORMES, ALCIDAE
+Marsh Wren,175,Marsh,Insects,Shrub,Least Concern,15,12,11.5, PASSERIFORMES, TROGLODYTIDAE
+Masked Booby,26,Ocean,Fish,Ground,Least Concern,160,80,1825, SULIFORMES, SULIDAE
+McCown's Longspur,25,Grassland,Seeds,Ground,Least Concern,28,15,27, PASSERIFORMES, CALCARIIDAE
+Merlin,37,Open Woodland,Birds,Tree,Least Concern,60.5,27,200, FALCONIFORMES, FALCONIDAE
+Mew Gull,124,Shore-line,Omnivore,Ground,Least Concern,110.5,43.5,480, CHARADRIIFORMES, LARIDAE
+Mexican Jay,32,Open Woodland,Omnivore,Tree,Least Concern,50,29,127.5, PASSERIFORMES, CORVIDAE
+Mississippi Kite,5,Open Woodland,Insects,Tree,Least Concern,86,35.5,301, ACCIPITRIFORMES, ACCIPITRIDAE
+Monk Parakeet,84,Town,Seeds,Tree,Least Concern,53,49,105, PSITTACIFORMES, PSITTACIDAE
+Montezuma Quail,14,Open Woodland,Omnivore,Ground,Least Concern,42,21.5,176, GALLIFORMES, ODONTOPHORIDAE
+Mottled Duck,9,Lake/Pond,Insects,Ground,Least Concern,87.5,52.5,985, ANSERIFORMES, ANATIDAE
+Mountain Bluebird,10,Open Woodland,Insects,Cavity,Least Concern,28,18,30, PASSERIFORMES, TURDIDAE
+Mountain Chickadee,114,Forest,Insects,Cavity,Least Concern,21,12.5,11, PASSERIFORMES, PARIDAE
+Mountain Plover,5,Grassland,Insects,Ground,Near Threatened,58,22,100, CHARADRIIFORMES, CHARADRIIDAE
+Mountain Quail,45,Forest,Seeds,Ground,Least Concern,41,28.5,225.5, GALLIFORMES, ODONTOPHORIDAE
+Mourning_Dove,71,Open Woodland,Seeds,Tree,Least Concern,45,28.5,133, COLUMBIFORMES, COLUMBIDAE
+Mourning Dove,71,Open Woodland,Seeds,Tree,Least Concern,45,28.5,133, COLUMBIFORMES, COLUMBIDAE
+Mourning Warbler,103,Forest,Insects,Ground,Least Concern,18,12.5,12, PASSERIFORMES, PARULIDAE
+Mute Swan,106,Lake/Pond,Plants,Ground,Least Concern,223,139.5,9900, ANSERIFORMES, ANATIDAE
+Nashville Warbler,95,Forest,Insects,Ground,Least Concern,18.5,11,9.5, PASSERIFORMES, PARULIDAE
+Nelson's Sparrow,21,Marsh,Insects,Ground,Least Concern,20,12,20, PASSERIFORMES, EMBERIZIDAE
+Neotropic Cormorant,53,Lake/Pond,Fish,Tree,Least Concern,102,61,1285, SULIFORMES, PHALACROCORACIDAE
+Northern Cardinal,237,Open Woodland,Seeds,Shrub,Least Concern,28,22,45, PASSERIFORMES, CARDINALIDAE
+Northern Flicker,126,Open Woodland,Insects,Cavity,Least Concern,46.5,29.5,135, PICIFORMES, PICIDAE
+Northern Fulmar,20,Ocean,Fish,Cliff,Least Concern,106,44.5,725, PROCELLARIIFORMES, PROCELLARIIDAE
+Northern Gannet,26,Ocean,Fish,Cliff,Least Concern,177,95.5,2900, SULIFORMES, SULIDAE
+Northern Goshawk,67,Forest,Birds,Tree,Least Concern,110,58.5,997.5, ACCIPITRIFORMES, ACCIPITRIDAE
+Northern Harrier,16,Grassland,Mammals,Ground,Least Concern,110,48,525, ACCIPITRIFORMES, ACCIPITRIDAE
+Northern Hawk Owl,0,Forest,Mammals,Cavity,Least Concern,71,40.5,347, STRIGIFORMES, STRIGIDAE
+Northern Mockingbird,136,Town,Omnivore,Shrub,Least Concern,33,23.5,51.5, PASSERIFORMES, MIMIDAE
+Northern Parula,122,Forest,Insects,Tree,Least Concern,17,11.5,8, PASSERIFORMES, PARULIDAE
+Northern Pintail,22,Lake/Pond,Seeds,Ground,Least Concern,74,63.5,975, ANSERIFORMES, ANATIDAE
+Northern Pygmy-Owl,0,Forest,Birds,Cavity,Least Concern,38,17,33.5, STRIGIFORMES, STRIGIDAE
+Northern Rough-winged Swallow,21,River/Stream,Insects,Burrow,Least Concern,28.5,13.5,14, PASSERIFORMES, HIRUNDINIDAE
+Northern Saw-whet Owl,86,Forest,Mammals,Cavity,Least Concern,45,19.5,108, STRIGIFORMES, STRIGIDAE
+Northern Shoveler,47,Marsh,Plants,Ground,Least Concern,69,47.5,610, ANSERIFORMES, ANATIDAE
+Northern Shrike,0,Open Woodland,Birds,Tree,Least Concern,32.5,23.5,67.5, PASSERIFORMES, LANIIDAE
+Northern Waterthrush,132,Forest,Insects,Ground,Least Concern,22.5,13,19, PASSERIFORMES, PARULIDAE
+Northwestern Crow,49,Open Woodland,Omnivore,Tree,Least Concern,77,37,294, PASSERIFORMES, CORVIDAE
+Nuttall's Woodpecker,41,Open Woodland,Insects,Cavity,Least Concern,34,17,37.5, PICIFORMES, PICIDAE
+Oak Titmouse,50,Open Woodland,Insects,Cavity,Least Concern,19,13,15.5, PASSERIFORMES, PARIDAE
+Olive-sided Flycatcher,78,Open Woodland,Insects,Tree,Near Threatened,33,19,34.5, PASSERIFORMES, TYRANNIDAE
+Orange-crowned Warbler,120,Forest,Insects,Ground,Least Concern,19,12.5,9, PASSERIFORMES, PARULIDAE
+Orchard Oriole,68,Open Woodland,Insects,Tree,Least Concern,25,16.5,22, PASSERIFORMES, ICTERIDAE
+Osprey,92,Lake/Pond,Fish,Tree,Least Concern,165,56,1700, ACCIPITRIFORMES, PANDIONIDAE
+Ovenbird,132,Forest,Insects,Ground,Least Concern,22.5,12.5,22, PASSERIFORMES, PARULIDAE
+Pacific Golden-Plover,0,Grassland,Insects,Ground,Least Concern,61,24.5,105, CHARADRIIFORMES, CHARADRIIDAE
+Pacific Loon,8,Lake/Pond,Fish,Ground,Least Concern,119,66,1750, GAVIIFORMES, GAVIIDAE
+Pacific-slope Flycatcher,113,Forest,Insects,Cavity,Least Concern,21.5,15.5,10, PASSERIFORMES, TYRANNIDAE
+Painted Bunting,51,Scrub,Seeds,Shrub,Near Threatened,22,12.5,16, PASSERIFORMES, CARDINALIDAE
+Painted Redstart,0,Forest,Insects,Ground,Least Concern,21,14,9.5, PASSERIFORMES, PARULIDAE
+Palm Warbler,46,Open Woodland,Insects,Ground,Least Concern,20.5,13,10, PASSERIFORMES, PARULIDAE
+Parakeet Auklet,2,Ocean,Insects,Burrow,Least Concern,46,24.5,292.5, CHARADRIIFORMES, ALCIDAE
+Pectoral Sandpiper,42,Grassland,Insects,Ground,Least Concern,43,22,73, CHARADRIIFORMES, SCOLOPACIDAE
+Pelagic Cormorant,6,Shore-line,Fish,Cliff,Least Concern,110.5,63.5,1905, SULIFORMES, PHALACROCORACIDAE
+Peregrine Falcon,54,Mountains,Birds,Cliff,Least Concern,105,42.5,1065, FALCONIFORMES, FALCONIDAE
+Phainopepla,39,Scrub,Fruit,Tree,Least Concern,29,19.5,23, PASSERIFORMES, PTILOGONATIDAE
+Philadelphia Vireo,40,Forest,Insects,Tree,Least Concern,20,12,12, PASSERIFORMES, VIREONIDAE
+Pied-billed Grebe,77,Lake/Pond,Insects,Floating,Least Concern,53.5,34,410.5, PODICIPEDIFORMES, PODICIPEDIDAE
+Pigeon Guillemot,4,Ocean,Fish,Cliff,Least Concern,57,32.5,500, CHARADRIIFORMES, ALCIDAE
+Pileated Woodpecker,74,Forest,Insects,Cavity,Least Concern,70.5,44.5,300, PICIFORMES, PICIDAE
+Pine Grosbeak,48,Open Woodland,Seeds,Tree,Least Concern,33,22.5,52, PASSERIFORMES, FRINGILLIDAE
+Pine Siskin,133,Open Woodland,Seeds,Tree,Least Concern,20,12.5,15, PASSERIFORMES, FRINGILLIDAE
+Pine Warbler,73,Forest,Insects,Tree,Least Concern,21,13.5,12, PASSERIFORMES, PARULIDAE
+Pinyon Jay,53,Open Woodland,Omnivore,Tree,Vulnerable,46,27.5,105, PASSERIFORMES, CORVIDAE
+Piping Plover,8,Shore-line,Insects,Ground,Near Threatened,38,17.5,53, CHARADRIIFORMES, CHARADRIIDAE
+Plain Chachalaca,41,Forest,Fruit,Tree,Least Concern,66,55,492.5, GALLIFORMES, CRACIDAE
+Plumbeous Vireo,63,Forest,Insects,Tree,Least Concern,25,13,16, PASSERIFORMES, VIREONIDAE
+Prairie Falcon,3,Grassland,Birds,Cliff,Least Concern,101.5,42,760, FALCONIFORMES, FALCONIDAE
+Prairie Warbler,76,Open Woodland,Insects,Shrub,Least Concern,18,11,7.5, PASSERIFORMES, PARULIDAE
+Purple Finch,157,Forest,Seeds,Tree,Least Concern,24,14,25, PASSERIFORMES, FRINGILLIDAE
+Purple Gallinule,73,Marsh,Omnivore,Floating,Least Concern,55,36.5,248, GRUIFORMES, RALLIDAE
+Purple Martin,62,Lake/Pond,Insects,Cavity,Least Concern,40,19.5,52.5, PASSERIFORMES, HIRUNDINIDAE
+Purple Sandpiper,21,Shore-line,Insects,Ground,Least Concern,44,21,77.5, CHARADRIIFORMES, SCOLOPACIDAE
+Pygmy Nuthatch,59,Forest,Insects,Cavity,Least Concern,20,10,10, PASSERIFORMES, SITTIDAE
+Pyrrhuloxia,28,Scrub,Seeds,Shrub,Least Concern,31,21,33.5, PASSERIFORMES, CARDINALIDAE
+Razorbill,2,Ocean,Fish,Cliff,Least Concern,65.5,43,697.5, CHARADRIIFORMES, ALCIDAE
+Red-bellied Woodpecker,100,Forest,Insects,Cavity,Least Concern,37.5,24,73.5, PICIFORMES, PICIDAE
+Red-breasted Merganser,14,Lake/Pond,Fish,Ground,Least Concern,70,57.5,1075, ANSERIFORMES, ANATIDAE
+Red-breasted Nuthatch,91,Forest,Insects,Cavity,Least Concern,19,11,10.5, PASSERIFORMES, SITTIDAE
+Red-breasted Sapsucker,30,Forest,Insects,Cavity,Least Concern,38.5,21,53.5, PICIFORMES, PICIDAE
+Red-cockaded Woodpecker,33,Open Woodland,Insects,Cavity,Vulnerable,36,21.5,47, PICIFORMES, PICIDAE
+Reddish Egret,6,Marsh,Fish,Tree,Near Threatened,117,75,775, PELECANIFORMES, ARDEIDAE
+Red-eyed Vireo,263,Forest,Insects,Tree,Least Concern,24,12.5,19, PASSERIFORMES, VIREONIDAE
+Red-faced Warbler,23,Forest,Insects,Ground,Least Concern,21,14,9.5, PASSERIFORMES, PARULIDAE
+Red-footed Booby,36,Ocean,Fish,Shrub,Least Concern,152,74,975, SULIFORMES, SULIDAE
+Redhead,13,Lake/Pond,Plants,Floating,Least Concern,77,48,1065, ANSERIFORMES, ANATIDAE
+Red-headed Woodpecker,41,Open Woodland,Omnivore,Cavity,Near Threatened,42,21,73.5, PICIFORMES, PICIDAE
+Red Knot,19,Shore-line,Insects,Ground,Least Concern,54,24,135, CHARADRIIFORMES, SCOLOPACIDAE
+Red-naped Sapsucker,23,Forest,Insects,Cavity,Least Concern,41,20,49, PICIFORMES, PICIDAE
+Red-necked Grebe,46,Lake/Pond,Fish,Floating,Least Concern,74.5,49.5,1200, PODICIPEDIFORMES, PODICIPEDIDAE
+Red-shouldered Hawk,46,Forest,Mammals,Tree,Least Concern,102.5,52,630, ACCIPITRIFORMES, ACCIPITRIDAE
+Red-tailed Hawk,59,Open Woodland,Small_Animals,Tree,Least Concern,57.5,50.5,995, ACCIPITRIFORMES, ACCIPITRIDAE
+Red-throated Loon,61,Lake/Pond,Fish,Ground,Least Concern,110,61,1850, GAVIIFORMES, GAVIIDAE
+Red-winged Blackbird,328,Marsh,Insects,Shrub,Least Concern,35.5,20,54.5, PASSERIFORMES, ICTERIDAE
+Rhinoceros Auklet,0,Ocean,Fish,Burrow,Least Concern,60.5,28.5,485, CHARADRIIFORMES, ALCIDAE
+Ring-billed Gull,58,Lake/Pond,Omnivore,Ground,Least Concern,111,48.5,500, CHARADRIIFORMES, LARIDAE
+Ring-necked Duck,24,Lake/Pond,Plants,Ground,Least Concern,62.5,42.5,700, ANSERIFORMES, ANATIDAE
+Ring-necked Pheasant,0,Grassland,Omnivore,Ground,Least Concern,71,60,1750, GALLIFORMES, PHASIANIDAE
+Rock Pigeon,0,Town,Seeds,Building,Least Concern,58.5,33,322.5, COLUMBIFORMES, COLUMBIDAE
+Rock Ptarmigan,19,Mountains,Plants,Ground,Least Concern,58,36,540, GALLIFORMES, PHASIANIDAE
+Rock Sandpiper,20,Shore-line,Insects,Ground,Least Concern,39,21,93.5, CHARADRIIFORMES, SCOLOPACIDAE
+Rock Wren,57,Mountains,Insects,Ground,Least Concern,23,13.5,16.5, PASSERIFORMES, TROGLODYTIDAE
+Roseate Spoonbill,14,Marsh,Fish,Tree,Least Concern,125,78.5,1500, PELECANIFORMES, THRESKIORNITHIDAE
+Roseate Tern,67,Shore-line,Fish,Ground,Least Concern,73,37,115, CHARADRIIFORMES, LARIDAE
+Rose-breasted Grosbeak,95,Forest,Insects,Tree,Least Concern,31,19.5,44, PASSERIFORMES, CARDINALIDAE
+Ross's Goose,4,Lake/Pond,Plants,Ground,Least Concern,114,60.5,1450, ANSERIFORMES, ANATIDAE
+Ross's Gull,0,Marsh,Insects,Ground,Least Concern,95,30,195, CHARADRIIFORMES, LARIDAE
+Rough-legged Hawk,0,Grassland,Mammals,Cliff,Least Concern,135,49.5,1057.5, ACCIPITRIFORMES, ACCIPITRIDAE
+Royal Tern,37,Shore-line,Fish,Ground,Least Concern,130,47.5,400, CHARADRIIFORMES, LARIDAE
+Ruby-crowned Kinglet,184,Forest,Insects,Tree,Least Concern,17,10,7.5, PASSERIFORMES, REGULIDAE
+Ruby-throated Hummingbird,23,Open Woodland,Nectar,Tree,Least Concern,9.5,8,4, APODIFORMES, TROCHILIDAE
+Ruddy Duck,17,Marsh,Insects,Ground,Least Concern,59,39,575, ANSERIFORMES, ANATIDAE
+Ruddy Turnstone,57,Shore-line,Insects,Ground,Least Concern,53.5,18.5,137, CHARADRIIFORMES, SCOLOPACIDAE
+Ruffed Grouse,18,Forest,Omnivore,Ground,Least Concern,57,45,600, GALLIFORMES, PHASIANIDAE
+Rufous-crowned Sparrow,77,Scrub,Seeds,Ground,Least Concern,21,15.5,18.5, PASSERIFORMES, EMBERIZIDAE
+Rufous Hummingbird,50,Open Woodland,Nectar,Tree,Least Concern,11,8,3.5, APODIFORMES, TROCHILIDAE
+Rufous-winged Sparrow,49,Scrub,Insects,Shrub,Least Concern,21,13.5,15, PASSERIFORMES, EMBERIZIDAE
+Rusty Blackbird,50,Forest,Insects,Tree,Vulnerable,37,23,63.5, PASSERIFORMES, ICTERIDAE
+Sabine's Gull,10,Ocean,Insects,Ground,Least Concern,84,34,184, CHARADRIIFORMES, LARIDAE
+Sagebrush Sparrow,18,Scrub,Insects,Shrub,Least Concern,21,13.5,18.5, PASSERIFORMES, EMBERIZIDAE
+Sage Thrasher,21,Scrub,Insects,Shrub,Least Concern,32,21.5,45, PASSERIFORMES, MIMIDAE
+Saltmarsh Sparrow,6,Marsh,Insects,Ground,Vulnerable,19,12,16.5, PASSERIFORMES, EMBERIZIDAE
+Sanderling,34,Shore-line,Insects,Ground,Least Concern,35,19,70, CHARADRIIFORMES, SCOLOPACIDAE
+Sandhill Crane,62,Marsh,Omnivore,Ground,Least Concern,200,120,4150, GRUIFORMES, GRUIDAE
+Sandwich Tern,37,Shore-line,Fish,Ground,Least Concern,87,39.5,240, CHARADRIIFORMES, LARIDAE
+Savannah Sparrow,123,Grassland,Insects,Ground,Least Concern,21,13,21.5, PASSERIFORMES, EMBERIZIDAE
+Say's Phoebe,38,Grassland,Insects,Building,Least Concern,30,17,21.5, PASSERIFORMES, TYRANNIDAE
+Scaled Quail,15,Grassland,Seeds,Ground,Least Concern,38,30,184, GALLIFORMES, ODONTOPHORIDAE
+Scarlet Tanager,95,Forest,Insects,Tree,Least Concern,27,16.5,30.5, PASSERIFORMES, CARDINALIDAE
+Scissor-tailed Flycatcher,18,Grassland,Insects,Tree,Least Concern,36,29.5,46, PASSERIFORMES, TYRANNIDAE
+Scott's Oriole,36,Open Woodland,Insects,Tree,Least Concern,32,23,36.5, PASSERIFORMES, ICTERIDAE
+Seaside Sparrow,39,Marsh,Insects,Shrub,Least Concern,19,14,24, PASSERIFORMES, EMBERIZIDAE
+Sedge Wren,259,Marsh,Insects,Shrub,Least Concern,14,11,9, PASSERIFORMES, TROGLODYTIDAE
+Semipalmated Plover,54,Shore-line,Insects,Ground,Least Concern,48,18,47, CHARADRIIFORMES, CHARADRIIDAE
+Semipalmated Sandpiper,39,Shore-line,Insects,Ground,Near Threatened,29.5,14,26.5, CHARADRIIFORMES, SCOLOPACIDAE
+Sharp-shinned Hawk,10,Forest,Birds,Tree,Least Concern,49.5,29,152.5, ACCIPITRIFORMES, ACCIPITRIDAE
+Sharp-tailed Grouse,21,Grassland,Plants,Ground,Least Concern,63,44,813.5, GALLIFORMES, PHASIANIDAE
+Shiny Cowbird,98,Grassland,Insects,Tree,Least Concern,29,18,35.5, PASSERIFORMES, ICTERIDAE
+Short-billed Dowitcher,17,Marsh,Insects,Ground,Least Concern,48,27,105, CHARADRIIFORMES, SCOLOPACIDAE
+Short-eared Owl,51,Grassland,Mammals,Ground,Least Concern,94,38.5,340.5, STRIGIFORMES, STRIGIDAE
+Smith's Longspur,16,Grassland,Insects,Ground,Least Concern,25,16,26, PASSERIFORMES, CALCARIIDAE
+Smooth-billed Ani,139,Open Woodland,Omnivore,Tree,Least Concern,43,33,95, CUCULIFORMES, CUCULIDAE
+Snail Kite,47,Marsh,Insects,Tree,Least Concern,104,38,465, ACCIPITRIFORMES, ACCIPITRIDAE
+Snow Bunting,84,Grassland,Seeds,Ground,Least Concern,30,15,38.5, PASSERIFORMES, CALCARIIDAE
+Snow Goose,42,Lake/Pond,Plants,Ground,Least Concern,138,76,2450, ANSERIFORMES, ANATIDAE
+Snowy Egret,41,Marsh,Fish,Tree,Least Concern,100,61,370, PELECANIFORMES, ARDEIDAE
+Snowy Owl,6,Grassland,Mammals,Ground,Least Concern,135.5,61.5,2275, STRIGIFORMES, STRIGIDAE
+Snowy Plover,12,Shore-line,Insects,Ground,Least Concern,34,16,46, CHARADRIIFORMES, CHARADRIIDAE
+Solitary Sandpiper,59,Marsh,Insects,Tree,Least Concern,38,21,48, CHARADRIIFORMES, SCOLOPACIDAE
+Song Sparrow,417,Open Woodland,Insects,Shrub,Least Concern,21,14.5,32.5, PASSERIFORMES, EMBERIZIDAE
+Sooty Grouse,12,Forest,Plants,Ground,Least Concern,61,45,1025, GALLIFORMES, PHASIANIDAE
+Sora,74,Marsh,Seeds,Floating,Least Concern,30,22.5,80.5, GRUIFORMES, RALLIDAE
+Spot-breasted Oriole,14,Open Woodland,Fruit,Tree,Least Concern,33,22.5,50, PASSERIFORMES, ICTERIDAE
+Spotted Owl,46,Forest,Mammals,Cavity,Near Threatened,101,47.5,600, STRIGIFORMES, STRIGIDAE
+Spotted Sandpiper,49,Shore-line,Small_Animals,Ground,Least Concern,38.5,19,42, CHARADRIIFORMES, SCOLOPACIDAE
+Spotted Towhee,382,Scrub,Omnivore,Ground,Least Concern,28,19,41, PASSERIFORMES, EMBERIZIDAE
+Sprague's Pipit,16,Grassland,Insects,Ground,Vulnerable,25,12.5,24, PASSERIFORMES, MOTACILLIDAE
+Spruce Grouse,12,Forest,Plants,Ground,Least Concern,57,39.5,525, GALLIFORMES, PHASIANIDAE
+Steller's Eider,3,Lake/Pond,Insects,Ground,Vulnerable,71,44,865, ANSERIFORMES, ANATIDAE
+Steller's Jay,100,Forest,Omnivore,Tree,Least Concern,44,32,120, PASSERIFORMES, CORVIDAE
+Stilt Sandpiper,38,Marsh,Insects,Ground,Least Concern,38,21.5,60, CHARADRIIFORMES, SCOLOPACIDAE
+Summer Tanager,122,Open Woodland,Insects,Tree,Least Concern,28,17,30, PASSERIFORMES, CARDINALIDAE
+Surfbird,17,Shore-line,Insects,Ground,Least Concern,66,25,181.5, CHARADRIIFORMES, SCOLOPACIDAE
+Surf Scoter,11,Ocean,Insects,Ground,Least Concern,77,54,1361, ANSERIFORMES, ANATIDAE
+Swainson's Hawk,7,Grassland,Mammals,Tree,Least Concern,117,52,1030, ACCIPITRIFORMES, ACCIPITRIDAE
+Swainson's Thrush,285,Forest,Insects,Shrub,Least Concern,30,17.5,34, PASSERIFORMES, TURDIDAE
+Swainson's Warbler,121,Forest,Insects,Shrub,Least Concern,23,13.5,15.5, PASSERIFORMES, PARULIDAE
+Swallow-tailed Kite,53,Forest,Insects,Tree,Least Concern,122,57,485, ACCIPITRIFORMES, ACCIPITRIDAE
+Swamp Sparrow,80,Marsh,Insects,Shrub,Least Concern,18.5,13,17.5, PASSERIFORMES, EMBERIZIDAE
+Tennessee Warbler,124,Forest,Insects,Ground,Least Concern,20,11.5,10.5, PASSERIFORMES, PARULIDAE
+Thayer's Gull,0,Shore-line,Omnivore,Cliff,Least Concern,140,56,1000, CHARADRIIFORMES, LARIDAE
+Thick-billed Murre,9,Ocean,Fish,Cliff,Least Concern,71,45,1115.5, CHARADRIIFORMES, ALCIDAE
+Townsend's Solitaire,25,Open Woodland,Insects,Ground,Least Concern,33,21,32.5, PASSERIFORMES, TURDIDAE
+Townsend's Warbler,91,Forest,Insects,Tree,Least Concern,20,12,9, PASSERIFORMES, PARULIDAE
+Tree Swallow,57,Lake/Pond,Insects,Cavity,Least Concern,32.5,13.5,20.5, PASSERIFORMES, HIRUNDINIDAE
+Tricolored Heron,23,Marsh,Fish,Tree,Least Concern,95,65,415, PELECANIFORMES, ARDEIDAE
+Tropical Kingbird,185,Open Woodland,Insects,Tree,Least Concern,38,20.5,37.5, PASSERIFORMES, TYRANNIDAE
+Trumpeter Swan,15,Lake/Pond,Plants,Ground,Least Concern,203,148,10200, ANSERIFORMES, ANATIDAE
+Tufted Puffin,0,Ocean,Fish,Burrow,Least Concern,74,38,760, CHARADRIIFORMES, ALCIDAE
+Tufted Titmouse,117,Forest,Insects,Cavity,Least Concern,23,15,22, PASSERIFORMES, PARIDAE
+Tundra Swan,41,Lake/Pond,Plants,Ground,Least Concern,168,133.5,7150, ANSERIFORMES, ANATIDAE
+Turkey Vulture,3,Open Woodland,Carrion,Cliff,Least Concern,174,72.5,2000, ACCIPITRIFORMES, CATHARTIDAE
+Upland Sandpiper,34,Grassland,Insects,Ground,Least Concern,47,30,161.5, CHARADRIIFORMES, SCOLOPACIDAE
+Varied Bunting,19,Scrub,Insects,Shrub,Least Concern,21,12.5,12, PASSERIFORMES, CARDINALIDAE
+Varied Thrush,49,Forest,Insects,Tree,Least Concern,36,22.5,82.5, PASSERIFORMES, TURDIDAE
+Vaux's Swift,14,Forest,Insects,Tree,Least Concern,28,11,18.5, APODIFORMES, APODIDAE
+Veery,125,Forest,Insects,Ground,Least Concern,28.5,17.5,41, PASSERIFORMES, TURDIDAE
+Verdin,60,Scrub,Insects,Shrub,Least Concern,16,10,6.5, PASSERIFORMES, REMIZIDAE
+Vermilion Flycatcher,62,Open Woodland,Insects,Tree,Least Concern,30,13.5,12.5, PASSERIFORMES, TYRANNIDAE
+Vesper Sparrow,80,Grassland,Insects,Ground,Least Concern,24,14.5,24, PASSERIFORMES, EMBERIZIDAE
+Violet-green Swallow,40,Open Woodland,Insects,Cavity,Least Concern,27,12,14, PASSERIFORMES, HIRUNDINIDAE
+Virginia Rail,86,Marsh,Insects,Ground,Least Concern,35,23.5,80, GRUIFORMES, RALLIDAE
+Wandering Tattler,10,Shore-line,Insects,Ground,Least Concern,52.5,28,114.5, CHARADRIIFORMES, SCOLOPACIDAE
+Warbling Vireo,194,Open Woodland,Insects,Tree,Least Concern,22,12.5,13, PASSERIFORMES, VIREONIDAE
+Western Bluebird,27,Open Woodland,Insects,Cavity,Least Concern,29,17.5,27.5, PASSERIFORMES, TURDIDAE
+Western Grebe,17,Lake/Pond,Fish,Floating,Least Concern,82.5,65,1300, PODICIPEDIFORMES, PODICIPEDIDAE
+Western Gull,12,Ocean,Fish,Cliff,Least Concern,132,61,1025, CHARADRIIFORMES, LARIDAE
+Western Kingbird,54,Grassland,Insects,Tree,Least Concern,38.5,22,41.5, PASSERIFORMES, TYRANNIDAE
+Western Meadowlark,131,Grassland,Insects,Ground,Least Concern,41,21,102, PASSERIFORMES, ICTERIDAE
+Western Sandpiper,22,Shore-line,Insects,Ground,Least Concern,31.5,15.5,28.5, CHARADRIIFORMES, SCOLOPACIDAE
+Western Screech-Owl,0,Open Woodland,Mammals,Cavity,Least Concern,58.5,22,202.5, STRIGIFORMES, STRIGIDAE
+Western Scrub-Jay,0,Scrub,Omnivore,Tree,Least Concern,39,29,85, PASSERIFORMES, CORVIDAE
+Western Tanager,70,Forest,Insects,Tree,Least Concern,28,17.5,30, PASSERIFORMES, CARDINALIDAE
+Western Wood-Pewee,0,Open Woodland,Insects,Tree,Least Concern,26,15,12.5, PASSERIFORMES, TYRANNIDAE
+Whimbrel,118,Shore-line,Insects,Ground,Least Concern,79,44,401.5, CHARADRIIFORMES, SCOLOPACIDAE
+White-breasted Nuthatch,127,Forest,Insects,Cavity,Least Concern,23.5,13.5,24, PASSERIFORMES, SITTIDAE
+White-crowned Pigeon,19,Forest,Fruit,Tree,Near Threatened,59,34,250, COLUMBIFORMES, COLUMBIDAE
+White-crowned Sparrow,189,Scrub,Insects,Ground,Least Concern,22.5,15.5,26.5, PASSERIFORMES, EMBERIZIDAE
+White-eyed Vireo,149,Scrub,Insects,Shrub,Least Concern,17,12,12, PASSERIFORMES, VIREONIDAE
+White-faced Ibis,29,Marsh,Insects,Ground,Least Concern,91,51,487.5, PELECANIFORMES, THRESKIORNITHIDAE
+White-headed Woodpecker,12,Forest,Insects,Cavity,Least Concern,43,22,60, PICIFORMES, PICIDAE
+White Ibis,0,Marsh,Insects,Tree,Least Concern,97,62,900, PELECANIFORMES, THRESKIORNITHIDAE
+White-rumped Sandpiper,26,Shore-line,Insects,Ground,Least Concern,42,16.5,50, CHARADRIIFORMES, SCOLOPACIDAE
+White-tailed Hawk,32,Grassland,Mammals,Tree,Least Concern,132,52,1057.5, ACCIPITRIFORMES, ACCIPITRIDAE
+White-tailed Kite,20,Grassland,Mammals,Tree,Least Concern,102,35,330, ACCIPITRIFORMES, ACCIPITRIDAE
+White-tailed Ptarmigan,25,Mountains,Plants,Ground,Least Concern,56,30.5,405, GALLIFORMES, PHASIANIDAE
+White-throated Sparrow,130,Forest,Seeds,Ground,Least Concern,21.5,17,27, PASSERIFORMES, EMBERIZIDAE
+White-throated Swift,19,Mountains,Insects,Cliff,Least Concern,33,16.5,32, APODIFORMES, APODIDAE
+White-tipped Dove,187,Open Woodland,Seeds,Tree,Least Concern,46,28,164.5, COLUMBIFORMES, COLUMBIDAE
+White-winged Crossbill,0,Forest,Seeds,Tree,Least Concern,26.5,16,25, PASSERIFORMES, FRINGILLIDAE
+White-winged Scoter,1,Lake/Pond,Insects,Ground,Least Concern,80,53,1375, ANSERIFORMES, ANATIDAE
+Whooping Crane,1,Marsh,Omnivore,Ground,Endangered,229,150,6900, GRUIFORMES, GRUIDAE
+Wild Turkey,37,Open Woodland,Omnivore,Ground,Least Concern,134.5,112.5,6650, GALLIFORMES, PHASIANIDAE
+Willet,80,Shore-line,Small_Animals,Ground,Least Concern,70,37,265, CHARADRIIFORMES, SCOLOPACIDAE
+Williamson's Sapsucker,37,Forest,Insects,Cavity,Least Concern,43,23,49.5, PICIFORMES, PICIDAE
+Willow Flycatcher,117,Marsh,Insects,Shrub,Least Concern,21.5,15,13.5, PASSERIFORMES, TYRANNIDAE
+Willow Ptarmigan,56,Scrub,Plants,Ground,Least Concern,62.5,39.5,620, GALLIFORMES, PHASIANIDAE
+Wilson's Phalarope,13,Lake/Pond,Insects,Ground,Least Concern,41,23,74, CHARADRIIFORMES, SCOLOPACIDAE
+Wilson's Plover,22,Shore-line,Insects,Ground,Least Concern,48,18,62.5, CHARADRIIFORMES, CHARADRIIDAE
+Wilson's Snipe,79,Marsh,Insects,Ground,Least Concern,42.5,29.5,112.5, CHARADRIIFORMES, SCOLOPACIDAE
+Wilson's Warbler,114,Scrub,Insects,Ground,Least Concern,15.5,11,7.5, PASSERIFORMES, PARULIDAE
+Winter Wren,104,Forest,Insects,Cavity,Least Concern,14,10,10, PASSERIFORMES, TROGLODYTIDAE
+Wood Duck,33,Lake/Pond,Insects,Cavity,Least Concern,69.5,50.5,658, ANSERIFORMES, ANATIDAE
+Wood Stork,16,Marsh,Fish,Tree,Least Concern,162.5,100,2345, CICONIIFORMES, CICONIIDAE
+Wood Thrush,150,Forest,Insects,Tree,Least Concern,32,20,45, PASSERIFORMES, TURDIDAE
+Worm-eating Warbler,81,Forest,Insects,Ground,Least Concern,22,12,13, PASSERIFORMES, PARULIDAE
+Wrentit,34,Scrub,Insects,Shrub,Least Concern,18,14.5,14.5, PASSERIFORMES, SYLVIIDAE
+Yellow-bellied Flycatcher,76,Forest,Insects,Ground,Least Concern,19,14,12.5, PASSERIFORMES, TYRANNIDAE
+Yellow-bellied Sapsucker,47,Forest,Insects,Cavity,Least Concern,37,20,49, PICIFORMES, PICIDAE
+Yellow-billed Cuckoo,64,Open Woodland,Insects,Tree,Least Concern,40.5,28,60, CUCULIFORMES, CUCULIDAE
+Yellow-billed Magpie,9,Open Woodland,Omnivore,Tree,Least Concern,61,48.5,160, PASSERIFORMES, CORVIDAE
+Yellow-breasted Chat,111,Scrub,Insects,Shrub,Least Concern,25,18,27, PASSERIFORMES, PARULIDAE
+Yellow-crowned Night-Heron,0,Marsh,Insects,Tree,Least Concern,107,62.5,725, PELECANIFORMES, ARDEIDAE
+Yellow-headed Blackbird,51,Marsh,Insects,Shrub,Least Concern,43,23.5,72, PASSERIFORMES, ICTERIDAE
+Yellow Rail,27,Marsh,Insects,Ground,Least Concern,30,15.5,54.5, GRUIFORMES, RALLIDAE
+Yellow-rumped Warbler,0,Forest,Insects,Tree,Least Concern,21,13,12.5, PASSERIFORMES, PARULIDAE
+Yellow-throated Vireo,70,Open Woodland,Insects,Tree,Least Concern,23,14,18, PASSERIFORMES, VIREONIDAE
+Yellow-throated Warbler,46,Forest,Insects,Tree,Least Concern,21,13.5,10, PASSERIFORMES, PARULIDAE
+Yellow Warbler,0,Open Woodland,Insects,Shrub,Least Concern,18,12.5,10, PASSERIFORMES, PARULIDAE
+Zone-tailed Hawk,15,Open Woodland,Birds,Tree,Least Concern,129.5,50.5,129.5, ACCIPITRIFORMES, ACCIPITRIDAE
