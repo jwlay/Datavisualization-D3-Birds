@@ -18,7 +18,7 @@ var scatterq = [];
 var sunb;
 
 function runsql (query) {
-  if (query.length > 1) {
+  if (query[0] != 'empty') {
     if (query[0] == "scatter") {
       scatterq = [];
       for (var i = 1; i < query.length; i++) {
@@ -44,9 +44,13 @@ function runsql (query) {
     }
 
     var squery = sqlq.join(" AND ");
-
-    contents = db.exec("SELECT * FROM withNRec WHERE " +squery);
-    sunb = db.exec("SELECT conservation, habitat, nesting, name FROM withNRec WHERE "+squery);
+    if (squery.length > 1) {
+      contents = db.exec("SELECT * FROM withNRec WHERE " +squery);
+      sunb = db.exec("SELECT conservation, habitat, nesting, name FROM withNRec WHERE "+squery);
+    } else {
+      contents = db.exec("SELECT * FROM withNRec");
+      sunb = db.exec("SELECT conservation, habitat, nesting, name FROM withNRec");
+  }
   } else {
     scatterq = [];
     sunburstq = [];
@@ -55,11 +59,13 @@ function runsql (query) {
   }
   suncsv = [];
   if (query[0] != "sunburst") {
+    var no = " 1";
     for (i = 0; i < sunb[0].values.length; i++) {
-      var j = sunb[0].values[i].join("-");
-      var jp = [j, 1];
+      var j = sunb[0].values[i].join("++");
+      var jp = [j+'-end', no];
       suncsv.push(jp);
     }
+    console.log(suncsv);
     createSunburst();
   }
 }
