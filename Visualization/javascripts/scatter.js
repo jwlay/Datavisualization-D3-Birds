@@ -12,7 +12,7 @@ d3.json("data/withNRec.json",function(dataset){
          
     var rScale = d3.scale.linear()
             .domain([0, d3.max(dataset, function(d) { return d.AvgWeight; })])
-            .range([2, 35]);
+            .range([4, 35]);
     
     var xAxis = d3.svg.axis()
             .scale(xScale)
@@ -40,6 +40,8 @@ d3.json("data/withNRec.json",function(dataset){
             .append("circle")
             .attr("selected", 1)
             .style("fill", function(d) { return color(cValue(d));})
+            .style("stroke","white")
+            .style("opacity",0.7)
         	.attr("id", function(d){
                 return d.food;
             })
@@ -132,7 +134,7 @@ d3.json("data/withNRec.json",function(dataset){
     var arr = [];
     
     function click(d){
-        console.log(d);
+        //console.log(d);
                
         //console.log(d3.select("rect").attr("name"),d);
         
@@ -158,13 +160,13 @@ d3.json("data/withNRec.json",function(dataset){
         }else if(d3.selectAll("#"+d).attr("selected") == 0){
             d3.selectAll("#"+d).transition().duration(800)
                     .attr("selected", 1)
-                    .style("opacity", 1)
+                    .style("opacity", 0.7)
         
         var ind = arr.indexOf(d);
         if(ind > -1) arr.splice(ind,1);
             
         };                    
-        console.log(arr);
+        //console.log(arr);
         output(arr);
         }
     
