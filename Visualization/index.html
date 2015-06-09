@@ -1,13 +1,21 @@
 <!doctype html>
 <html>
+  <meta charset="utf-8">
   <head>
     <title>Team Data Visualization</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="stylesheets/style.css" text="text/css" />
+    <link rel="stylesheet" href="stylesheets/sunburst.css" text="text/css" />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script scr="bower_components/d3/d3.min.js"></script>
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src="http://d3js.org/d3.v2.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="bower_components/sql.js/js/sql.js"></script>
     <script src="javascripts/script.js"></script>
+    <script src="javascripts/scatter.js"></script>
+    <script src="javascripts/bar.js"></script>
+      <script src="javascripts/testData.js"></script>
   </head>
   <body>
     <div class="container">
@@ -15,23 +23,35 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-9" id="map">
-          Map Placeholder
+        <div class="col-md-6" id="map">
+        	<div id="cvsmaps"></div>
+		  Chart 3
+		  <div class= "col-7" id="scatter">  
+          </div>
         </div>
-        <div class="col-md-3" id="nav">
+        <div class="col-md-5" id="nav">
           Charts Placeholder
           <input type="text" class="form-control" placeholder="Search" id="search">
           <div class="col-12">
-            Chart 1
+            <div id="sunburst-container">
+              <div id="sequence"></div>
+              <div id="sunburst">
+                <div id="explanation" style="visibility: hidden;">
+                  <span id="percentage"></span><br/>
+                  of birds
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-12">
+          <div class="col-12" id="bar">
             Chart 2
           </div>
-          <div class= "col-12">
-            Chart 3
-          </div>
+
         </div>
       </div>
     </div>
+     
+    <script src="javascripts/maps.js"></script>
+    <script src="javascripts/sunburst.js"></script>
   </body>
 </html>

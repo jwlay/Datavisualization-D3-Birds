@@ -1,0 +1,47 @@
+#sunburst-container {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+#sequence {
+  width: 80%;
+  position: relative;
+  height: 70px;
+}
+
+#sequence text {
+  font-weight: 600;
+  fill: #fff;
+}
+
+#chart {
+  position: relative;
+}
+
+#chart path {
+  stroke: #fff;
+}
+
+#explanation {
+  position: relative;
+  top: 0%;
+  left: 35%;
+  width: 140px;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+}
+
+#percentage {
+  font-size: 2.5em;
+}
+
+div.tooltip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 8px;
+}

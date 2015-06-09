@@ -23,4 +23,70 @@
     border-image-outset: 0 0 0 0;
     border-image-repeat: stretch stretch;
     }
+<<<<<<< HEAD
 }
+
+#map, #cvsmaps{
+	height: 800px;
+}
+
+=======
+    
+/*div.scatter{
+    position: relative;
+} 
+div.tooltip{
+    position: absolute;
+}*/
+>>>>>>> github/Ina
+/*div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;   
+    margin-right: 2px;
+    background-color: teal;
+}*/
+g.axis path,
+g.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 10px;
+}
+.tooltip {
+    background: #fff;
+  position: absolute;
+  /*width: 200px;
+  //height: 28px;*/
+  pointer-events: none;
+    box-shadow: 0 0 5px #999999;
+    padding: 5px;
+}
+h{
+    font-size: 15px;
+}
+p{
+    font-size: 10px;
+}
+
+#bar{
+overflow: auto;
+}
+<<<<<<< HEAD
+circle.inactive {
+  fill: grey;
+}
+<<<<<<< HEAD
+
+=======
+=======
+
+circle.inactive {
+  fill: grey;
+}
+>>>>>>> github/Joe's-Brunch
+>>>>>>> origin/Ina
