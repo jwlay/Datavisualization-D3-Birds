@@ -5,11 +5,15 @@ d3.json("data/withNRec.json",function(dataset){
                             
                             //var h=800;
                             //var w=dataset.length*10;
+                            //var DD = db.exec('SELECT * FROM withNRec'); 
                             var barPadding=1;
                     
                             var margin = {top: 20, right: 30, bottom: 30, left: 40},
                             w= 5000 - margin.left - margin.right,
                             h= 800 - margin.top - margin.bottom;
+    
+                            var cValue = function(d) { return d.conservation;},
+                                color = d3.scale.category10();
             
                             var yScale = d3.scale.linear()
                                 .domain([0, d3.max(dataset, function(d) { return d.numRecordings; })])
@@ -61,14 +65,12 @@ d3.json("data/withNRec.json",function(dataset){
                                 .attr("height",function(d) {
                                     return h-yScale(d.numRecordings);
                                 })
-                                .attr("fill", function(d) {
-                                    return "rgb(0, 0, " + (d.numRecordings * 10) + ")";
-                                })
+                                .style("fill", function(d) { return color(cValue(d));})
                                 .on("mouseover", function(d) {
                                 tooltip.transition()
                                     .duration(200)
                                     .style("opacity", .9);
-                                tooltip.html("<h>"+d.name+"</h>" + "<br/>"  +"<p>"+ "Number of Recordings: " +                                               d.numRecordings+ "</p>")
+                                tooltip.html("<h>"+d.name+"</h>" + "<br/>"  +"<p>"+ "Number of Recordings: " +                                               d.numRecordings+ "<br/>"+"Conservation Status: "+ d.conservation+"</p>")
                        
                                     .style("left", (d3.mouse(this)[0]-document.getElementById("bar").scrollLeft) + "px")
                                     .style("top", (1050 + d3.mouse(this)[1]) + "px");
