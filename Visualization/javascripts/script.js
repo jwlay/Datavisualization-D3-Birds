@@ -9,39 +9,58 @@ xhr.onload = function(e) {
   var uInt8Array = new Uint8Array(this.response);
   db = new SQL.Database(uInt8Array);
   contents = db.exec("SELECT * FROM birdsTRY");
+  runsql(["empty"]);
 };
 xhr.send();
 
 var sunburstq = [];
 var scatterq = [];
+var sunb;
 
 function runsql (query) {
-  if (query[0] == scatter) {
-    scatterq = [];
-    for (var i = 1; i < query.length; i++) {
-      scatterq.push(query[i]);
+  if (query.length > 1) {
+    if (query[0] == "scatter") {
+      scatterq = [];
+      for (var i = 1; i < query.length; i++) {
+        scatterq.push(query[i]);
+      }
+    } else {
+      sunburstq = [];
+      for (var i = 1; i < query.length; i++) {
+        sunburstq.push(query[i]);
+      }
     }
+    var sqlq = [];
+
+    if (sunburstq.length != 0) {
+      for (var i = 0; i < sunburstq.length; i++) {
+        sqlq.push(sunburstq[i]);
+      }
+    }
+    if (scatterq.length != 0) {
+      for (var i = 0; i < scatterq.length; i++) {
+        sqlq.push(scatterq[i]);
+      }
+    }
+
+    var squery = sqlq.join(" AND ");
+
+    contents = db.exec("SELECT * FROM birdsTRY WHERE " +squery);
+    sunb = db.exec("SELECT conservation, habitat, nesting, name FROM birdsTRY WHERE "+squery);
   } else {
+    scatterq = [];
     sunburstq = [];
-    for (var i = 1; i < query.length; i++) {
-      sunburstq.push(query[i]);
-    }
+    contents = db.exec("SELECT * FROM birdsTRY");
+    sunb = db.exec("SELECT conservation, habitat, nesting, name FROM birdsTRY");
   }
-  var sqlq = [];
-
-  if (sunburstq.length != 0) {
-    for (var i = 0; i < sunburstq.length; i++) {
-      sqlq.push(sunburstq[i]);
+  suncsv = [];
+  if (query[0] != "sunburst") {
+    for (i = 0; i < sunb[0].values.length; i++) {
+      var j = sunb[0].values[i].join("-");
+      var jp = [j, 1];
+      suncsv.push(jp);
     }
+    console.log(suncsv);
+    createSunburst();
   }
-  if (scatterq.length != 0) {
-    for (var i = 0; i < scatterq.length; i++) {
-      sqlq.push(scatterq[i]);
-    }
-  }
-
-  var squery = sqlq.join(" AND ");
-
-  contents = db.exec("SELECT * FROM birdsTRY WHERE " +squery);
-  console.log(contents);
 }
