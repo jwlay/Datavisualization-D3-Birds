@@ -49,7 +49,6 @@ var arc = d3.svg.arc()
 // row, and can receive the csv as an array of arrays.
 var suncsv;
 function createSunburst() {
-  console.log(suncsv);
   var json = buildHierarchy(suncsv);
   createVisualization(json);
 };
@@ -98,7 +97,6 @@ var path;
 function createVisualization(json) {
   // Basic setup of page elements.
   initializeBreadcrumbTrail();
-  console.log(json);
   path = vis.data([json]).selectAll("path")
       .data(partition.nodes(json))
       .enter().append("svg:path")

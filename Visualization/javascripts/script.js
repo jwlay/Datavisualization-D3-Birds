@@ -2,13 +2,13 @@ var sql = window.SQL;
 var db;
 var contents;
 var xhr = new XMLHttpRequest();
-xhr.open('GET', './data/birdDatabase.sqlite', true);
+xhr.open('GET', './data/withNRec.sqlite', true);
 xhr.responseType = 'arraybuffer';
 
 xhr.onload = function(e) {
   var uInt8Array = new Uint8Array(this.response);
   db = new SQL.Database(uInt8Array);
-  contents = db.exec("SELECT * FROM birdsTRY");
+  contents = db.exec("SELECT * FROM withNRec");
   runsql(["empty"]);
 };
 xhr.send();
@@ -45,13 +45,13 @@ function runsql (query) {
 
     var squery = sqlq.join(" AND ");
 
-    contents = db.exec("SELECT * FROM birdsTRY WHERE " +squery);
-    sunb = db.exec("SELECT conservation, habitat, nesting, name FROM birdsTRY WHERE "+squery);
+    contents = db.exec("SELECT * FROM withNRec WHERE " +squery);
+    sunb = db.exec("SELECT conservation, habitat, nesting, name FROM withNRec WHERE "+squery);
   } else {
     scatterq = [];
     sunburstq = [];
-    contents = db.exec("SELECT * FROM birdsTRY");
-    sunb = db.exec("SELECT conservation, habitat, nesting, name FROM birdsTRY");
+    contents = db.exec("SELECT * FROM withNRec");
+    sunb = db.exec("SELECT conservation, habitat, nesting, name FROM withNRec");
   }
   suncsv = [];
   if (query[0] != "sunburst") {
@@ -60,7 +60,6 @@ function runsql (query) {
       var jp = [j, 1];
       suncsv.push(jp);
     }
-    console.log(suncsv);
     createSunburst();
   }
 }
