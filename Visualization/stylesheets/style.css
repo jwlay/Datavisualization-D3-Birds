@@ -23,31 +23,14 @@
     border-image-outset: 0 0 0 0;
     border-image-repeat: stretch stretch;
     }
-<<<<<<< HEAD
 }
 
 #map, #cvsmaps{
 	height: 800px;
 }
 
-=======
-    
-/*div.scatter{
-    position: relative;
-} 
-div.tooltip{
-    position: absolute;
-}*/
->>>>>>> github/Ina
-div.bar {
-    display: inline-block;
-    width: 20px;
-    height: 75px;   /* We'll override this later */
-    margin-right: 2px;
-    background-color: teal;
-}
-.axis path,
-.axis line {
+g.axis path,
+g.axis line {
     fill: none;
     stroke: black;
     shape-rendering: crispEdges;
@@ -72,13 +55,10 @@ h{
 p{
     font-size: 10px;
 }
-<<<<<<< HEAD
-circle.inactive {
-  fill: grey;
-}
-=======
 
+#bar{
+overflow: auto;
+}
 circle.inactive {
   fill: grey;
 }
->>>>>>> github/Joe's-Brunch
