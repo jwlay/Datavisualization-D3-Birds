@@ -16,6 +16,9 @@ var x = d3.scale.linear()
 var y = d3.scale.sqrt()
     .range([0, radius]);
 
+var partition = d3.layout.partition()
+    .value(function(d) { return d.size; });
+
 // Mapping of step names to colors.
 
 var colors = {
@@ -36,8 +39,6 @@ var vis = d3.select("#sunburst").append("svg:svg")
     .append("svg:g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-var partition = d3.layout.partition()
-    .value(function(d) { return d.size; });
 
 var arc = d3.svg.arc()
     .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
@@ -59,18 +60,21 @@ function stash(d) {
 }
 
 function click(d) {
-  var r = []
-  var obj = {};
-  var obj = d;
-  var rl = ["sunburst"];
-  var rn = ["conservation", "habitat", "nesting", "name"]
-  while (obj.hasOwnProperty('parent')) {
-    r.unshift(obj.name);
-    obj = obj.parent;
+
+    var r = []
+    var obj = {};
+    var obj = d;
+    var rl = ["sunburst"];
+    var rn = ["conservation", "habitat", "nesting", "name"]
+    if (d.name != "root") {
+    while (obj.hasOwnProperty('parent')) {
+      r.unshift(obj.name);
+      obj = obj.parent;
+    }
+    for (i = 0; i < r.length; i++) {
+      rl.push(rn[i]+" = '"+r[i]+"'");
+    };
   }
-  for (i = 0; i < r.length; i++) {
-    rl.push(rn[i]+" = '"+r[i]+"'");
-  };
   runsql(rl);
 
   explanation(d);
@@ -95,15 +99,16 @@ var path;
 
 // Main function to draw and set up the visualization, once we have the data.
 function createVisualization(json) {
+  if (first_run == true) {
   // Basic setup of page elements.
   initializeBreadcrumbTrail();
   path = vis.data([json]).selectAll("path")
       .data(partition.nodes(json))
       .enter().append("svg:path")
-      .filter(function(d) {
+      /*.filter(function(d) {
           return (d.dx > 0.002); // 0.005 radians = 0.29 degrees
-        })
-    //  .attr("display", function(d) { return d.depth ? null : "none"; })
+        })*/
+    // .attr("display", function(d) { return d.depth ? null : "none"; })
       .attr("d", arc)
       .attr("fill-rule", "evenodd")
       .style("fill", function(d) { return colors[d.name]; })
@@ -115,14 +120,49 @@ function createVisualization(json) {
   // Add the mouseleave handler to the bounding circle.
   d3.select("#sunburst-container").on("mouseleave", mouseleave);
 
-  // Get total size of the tree = value of root node from partition.
-  if (first_run == true) {
-    totalSize = path.node().__data__.value;
-    first_run = false;
-  }
- };
 
- function arcTween(d) {
+    first_run = false;
+  } else {
+    change();
+  }
+
+  function change() {
+    var value = this.value;
+    initializeBreadcrumbTrail();
+    partition.value(function(d) { return d.size; }); // change the value function
+    //path = vis.data([json]).selectAll("path").data(partition.nodes(json)); // compute the new angles
+    vis.data([json]).selectAll("path").each(function(d,i) {
+
+     path = vis.data([json]).selectAll("path")
+     .data(partition.nodes(json))
+      .exit().remove("svg:path")
+      .enter().append("svg:path")
+      .transition()
+      .duration(750)
+      //.attrTween("d", arcTween(d))
+      //.attr("display", function(d) { return d.depth ? null : "none"; })
+      .attr("d", arc)
+      .attr("fill-rule", "evenodd")
+      .style("fill", function(d) { return colors[d.name]; })
+      .style("opacity", 1)
+      .on("mouseover", mouseover)
+      .on("click", click)
+      .each(stash);
+    })
+  }
+  // Get total size of the tree = value of root node from partition.
+  totalSize = path.node().__data__.value;
+};
+
+function arcTweenData(a) {
+  var i = d3.interpolate(this._current, a);
+  this._current = i(0);
+  return function(t) {
+    return arc(i(t));
+  };
+}
+
+function arcTween(d) {
   var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
       yd = d3.interpolate(y.domain(), [d.y, 1]),
       yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
@@ -273,14 +313,14 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 // often that sequence occurred.
 var root;
 function buildHierarchy(csv) {
-   root = {"name": "All", "children": []};
+   root = {"name": "root", "children": []};
   for (var i = 0; i < csv.length; i++) {
     var sequence = csv[i][0];
     var size = +csv[i][1];
     if (isNaN(size)) { // e.g. if this is a header row
       continue;
     }
-    var parts = sequence.split("-");
+    var parts = sequence.split("++");
     var currentNode = root;
     for (var j = 0; j < parts.length; j++) {
       var children = currentNode["children"];
