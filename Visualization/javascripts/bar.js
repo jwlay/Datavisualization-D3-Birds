@@ -1,11 +1,12 @@
-d3.json("data/withNRec.json",function(dataset){
+var newData = JSON.stringify(DDa);
+d3.json(newData,function(dataset){
                         
                             //var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
                             //               11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
                             
                             //var h=800;
                             //var w=dataset.length*10;
-                            //var DD = db.exec('SELECT * FROM withNRec'); 
+                            
                             var barPadding=1;
                     
                             var margin = {top: 20, right: 30, bottom: 30, left: 40},
@@ -16,7 +17,7 @@ d3.json("data/withNRec.json",function(dataset){
                                 color = d3.scale.category10();
             
                             var yScale = d3.scale.linear()
-                                .domain([0, d3.max(dataset, function(d) { return d.numRecordings; })])
+                                .domain([0, d3.max(DDa, function(d) { return d.numRecordings; })])
                                 .range([h, 0]);
         
                             var yAxis = d3.svg.axis()
@@ -50,17 +51,17 @@ d3.json("data/withNRec.json",function(dataset){
                           
                             
                             svg.selectAll("rect")
-                                .data(dataset)
-                                .data(dataset.sort(function(a, b){return b.numRecordings-                                                               a.numRecordings}))
+                                .data(DDa)
+                                .data(DDa.sort(function(a, b){return b.numRecordings-                                                               a.numRecordings}))
                                 .enter()
                                 .append("rect")
                                 .attr("x",0)
                                 .attr("y", function(d){
                                     return yScale(d.numRecordings);
                                 })
-                                .attr("width", w/dataset.length -barPadding)
+                                .attr("width", w/DDa.length -barPadding)
                                 .attr("x",function(d,i){
-                                    return i* (w/ dataset.length)+15;
+                                    return i* (w/DDa.length)+15;
                                 })
                                 .attr("height",function(d) {
                                     return h-yScale(d.numRecordings);
