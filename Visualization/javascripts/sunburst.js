@@ -8,6 +8,7 @@ var b = {
   w: 150, h: 30, s: 3, t: 10
 };
 
+var first_run = true;
 
 var x = d3.scale.linear()
     .range([0, 2 * Math.PI]);
@@ -46,11 +47,11 @@ var arc = d3.svg.arc()
 
 // Use d3.text and d3.csv.parseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.
-d3.text("data/sequence.csv", function(text) {
-  var csv = d3.csv.parseRows(text);
-  var json = buildHierarchy(csv);
+var suncsv;
+function createSunburst() {
+  var json = buildHierarchy(suncsv);
   createVisualization(json);
-});
+};
 
 function stash(d) {
   d.x0 = d.x;
@@ -61,11 +62,17 @@ function click(d) {
   var r = []
   var obj = {};
   var obj = d;
+  var rl = ["sunburst"];
+  var rn = ["conservation", "habitat", "nesting", "name"]
   while (obj.hasOwnProperty('parent')) {
-    r.push(obj.name);
+    r.unshift(obj.name);
     obj = obj.parent;
   }
-  console.log(r);
+  for (i = 0; i < r.length; i++) {
+    rl.push(rn[i]+" = '"+r[i]+"'");
+  };
+  runsql(rl);
+
   explanation(d);
   path.transition()
     .duration(750)
@@ -90,7 +97,6 @@ var path;
 function createVisualization(json) {
   // Basic setup of page elements.
   initializeBreadcrumbTrail();
-
   path = vis.data([json]).selectAll("path")
       .data(partition.nodes(json))
       .enter().append("svg:path")
@@ -110,7 +116,10 @@ function createVisualization(json) {
   d3.select("#sunburst-container").on("mouseleave", mouseleave);
 
   // Get total size of the tree = value of root node from partition.
-  totalSize = path.node().__data__.value;
+  if (first_run == true) {
+    totalSize = path.node().__data__.value;
+    first_run = false;
+  }
  };
 
  function arcTween(d) {
@@ -264,7 +273,7 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 // often that sequence occurred.
 var root;
 function buildHierarchy(csv) {
-   root = {"name": "root", "children": []};
+   root = {"name": "All", "children": []};
   for (var i = 0; i < csv.length; i++) {
     var sequence = csv[i][0];
     var size = +csv[i][1];
