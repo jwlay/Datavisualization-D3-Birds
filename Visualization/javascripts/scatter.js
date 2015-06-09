@@ -98,6 +98,8 @@ d3.json("data/withNRec.json",function(dataset){
     svg.append("g")
             .attr("class", "axis")
             .attr("transform", "translate(" + padding + ",0)")
+            .style("opacity",1)
+            //.style("fill","none");
             .call(yAxis)
         .append("text")
             .attr("class", "label")

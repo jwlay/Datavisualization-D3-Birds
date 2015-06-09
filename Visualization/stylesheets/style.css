@@ -39,15 +39,15 @@ div.tooltip{
     position: absolute;
 }*/
 >>>>>>> github/Ina
-div.bar {
+/*div.bar {
     display: inline-block;
     width: 20px;
-    height: 75px;   /* We'll override this later */
+    height: 75px;   
     margin-right: 2px;
     background-color: teal;
-}
-.axis path,
-.axis line {
+}*/
+g.axis path,
+g.axis line {
     fill: none;
     stroke: black;
     shape-rendering: crispEdges;
@@ -72,14 +72,16 @@ h{
 p{
     font-size: 10px;
 }
+
+#bar{
+overflow: auto;
+}
 <<<<<<< HEAD
 circle.inactive {
   fill: grey;
 }
 <<<<<<< HEAD
-.body{
-overflow: auto;
-}
+
 =======
 =======
 

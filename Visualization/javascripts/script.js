@@ -1,55 +1,60 @@
-<<<<<<< HEAD
-d3.json("data/birds.json",function(dataset){
+//<<<<<<< HEAD
+d3.json("data/withNRec.json",function(dataset){
                         
                             //var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
                             //               11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
-                            var h=200;
-                            var w=5000;
+                            
+                            var h=d3.max(dataset, function(d) { return                                                          d.numRecordings; })+10;
+                            var w=dataset.length*10;
                             var barPadding=1;
-                     
-                            var svg = d3.select("body")
+                    
+                            var svg = d3.select("#bar")
                                 .append("svg")
                                 .attr("width",w)
-                                .attr("height",h);
+                                .attr("height",h)
                                     
                             svg.selectAll("rect")
                                 .data(dataset)
+                                .data(dataset.sort(function(a, b){return b.numRecordings-                                           a.numRecordings}))
                                 .enter()
                                 .append("rect")
                                 .attr("x",0)
                                 .attr("y", function(d){
-                                    return h-d.MaxLength;
+                                    return h-d.numRecordings;
                                 })
                                 .attr("width", w/dataset.length -barPadding)
                                 .attr("x",function(d,i){
                                     return i* (w/ dataset.length);
                                 })
                                 .attr("height",function(d) {
-                                    return d.MaxLength;
+                                    return d.numRecordings;
                                 })
                                 .attr("fill", function(d) {
-                                    return "rgb(0, 0, " + (d.MaxLength * 10) + ")";
+                                    return "rgb(0, 0, " + (d.numRecordings * 10) + ")";
                                 });
                         
                             svg.selectAll("text")
                                 .data(dataset)
                                 .enter()
                                 .append("text")
+                                .attr("class", "text")
                                 .text(function(d) {
-                                    return d.MaxLength;
+                                    return d.numRecordings;
                                 })
                                 .attr("x", function(d, i){
                                     return i * (w/dataset.length) + ((w/dataset.length-                                               barPadding)/2);
                                 })
                                 .attr("y", function(d){
-                                    return h - (d.MaxLength) + 14;
+                                    return h - (d.numRecordings) + 14;
                                 })
                                 .attr("font-family", "sans-serif")
                                 .attr("font-size", "11px")
                                 .attr("fill", "white")
                                 .attr("text-anchor", "middle");
-                        });
-=======
+                   
+                                
+                    });
+//=======
 /*var sql = window.SQL;
 var db;
 var contents;
@@ -99,4 +104,4 @@ while (stmt.step()) console.log(stmt.get()); // Will print [0, 'hello']
 // free the memory used by the statement
 stmt.free();
 */
->>>>>>> origin/Ina
+//>>>>>>> origin/Ina
