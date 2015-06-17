@@ -5,7 +5,6 @@ var xhr = new XMLHttpRequest();
 xhr.open('GET', './data/withNRec.sqlite', true);
 xhr.responseType = 'arraybuffer';
 var newData;
-
 xhr.onload = function(e) {
   var uInt8Array = new Uint8Array(this.response);
   db = new SQL.Database(uInt8Array);
@@ -15,8 +14,11 @@ xhr.onload = function(e) {
 };
 xhr.send();
 
+var newData;
+
 var sunburstq = [];
 var scatterq = [];
+var barcsv = [];
 var sunb;
 
 function runsql (query) {
@@ -67,7 +69,12 @@ function runsql (query) {
       var jp = [j+'-end', no];
       suncsv.push(jp);
     }
-    newData = JSON.stringify(contents);
     createSunburst();
   }
+
+  barcsv = [];
+    for (i = 0; i < contents[0].values.length; i++) {
+      barcsv.push(new Object(contents[0].values[i]));
+    }
+    newData = JSON.stringify(barcsv);
 }

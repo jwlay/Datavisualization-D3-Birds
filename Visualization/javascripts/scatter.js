@@ -5,35 +5,35 @@ d3.json("data/withNRec.json",function(dataset){
     var xScale = d3.scale.linear()
             .domain([0, d3.max(dataset, function(d) { return d.AvgWingspan; })])
             .range([padding, w-padding]);
-    
+
     var yScale = d3.scale.linear()
             .domain([0, d3.max(dataset, function(d) { return d.AvgLength; })])
             .range([h-padding, padding]);
-         
+
     var rScale = d3.scale.linear()
             .domain([0, d3.max(dataset, function(d) { return d.AvgWeight; })])
             .range([4, 35]);
-    
+
     var xAxis = d3.svg.axis()
             .scale(xScale)
             .orient("bottom");
-    
+
     var yAxis = d3.svg.axis()
             .scale(yScale)
             .orient("left");
-    
+
     var cValue = function(d) { return d.food;},
         color = d3.scale.category20();
-    
+
     var tooltip = d3.select("#scatter").append("div")
             .attr("class", "tooltip")
-            .style("opacity", 0);    
-        
+            .style("opacity", 0);
+
     var svg = d3.select("#scatter")
             .append("svg")
             .attr("width", w)
             .attr("height", h);
-   
+
     svg.selectAll("circle")
             .data(dataset)
             .enter()
@@ -59,16 +59,16 @@ d3.json("data/withNRec.json",function(dataset){
                     .duration(200)
                     .style("opacity", .9);
                 tooltip.html("<h>"+d.name+"</h>" + "<br/>"  +"<p>"+ "Wingspan: " + d.AvgWingspan + "<br/>" +                                   "Length: " + d.AvgLength + "<br/>" + "Weight: " + d.AvgWeight + "                               <br/>" + "Food: " + d.food+"</p>")
-                       
+
                 .style("left", (d3.select(this).attr("cx")) + "px")
-                .style("top", (500 + d3.mouse(this)[1]) + "px");
+                .style("top", (750 + d3.mouse(this)[1]) + "px");
             })
             .on("mouseout", function(d) {
                 tooltip.transition()
                     .duration(500)
                     .style("opacity", 0);
       });
-    
+
     /*svg.selectAll("text")
             .data(dataset)
             .enter()
@@ -77,15 +77,15 @@ d3.json("data/withNRec.json",function(dataset){
                 return d.name;
             })
             .attr("x",function(d){
-              return xScale(d.AvgWingspan);  
+              return xScale(d.AvgWingspan);
             })
             .attr("y",function(d){
-              return yScale(d.AvgLength);  
+              return yScale(d.AvgLength);
             })
             .attr("font-family", "sans-serif")
             .attr("font-size", "8px")
             .attr("fill", "red");*/
-    
+
     svg.append("g")
             .attr("class", "axis")
             .attr("transform", "translate(0," + (h - padding) + ")")
@@ -96,7 +96,7 @@ d3.json("data/withNRec.json",function(dataset){
             .attr("y", -6)
             .style("text-anchor", "end")
             .text("Wingspan (cm)");
-    
+
     svg.append("g")
             .attr("class", "axis")
             .attr("transform", "translate(" + padding + ",0)")
@@ -111,7 +111,7 @@ d3.json("data/withNRec.json",function(dataset){
             .attr("x",-padding)
             .style("text-anchor", "end")
             .text("Length (cm)");
-      
+
     // draw legend
     var legend = svg.selectAll(".legend")
             .data(color.domain())
@@ -130,14 +130,14 @@ d3.json("data/withNRec.json",function(dataset){
             .attr("height", 18)
             .style("fill", color)
             .on("click",click);
-    
+
     var arr = [];
-    
+
     function click(d){
         //console.log(d);
-               
+
         //console.log(d3.select("rect").attr("name"),d);
-        
+
         if(d3.selectAll("[name="+d+"]").attr("selected") == 1){
         d3.selectAll("[name="+d+"]").transition()
                                     .style("opacity", 0.2)
@@ -147,43 +147,43 @@ d3.json("data/withNRec.json",function(dataset){
                                     .style("opacity", 1)
                                     .attr("selected", 1)
         }
-        
+
         if(d3.selectAll("#"+d).attr("selected") == 1){
             d3.selectAll("#"+d).transition().duration(800)
                     .style("opacity", 0)
-                    .attr("selected", 0)          
-        
+                    .attr("selected", 0)
+
         if($.inArray(d,arr)==-1){
                     arr.push(d);
             }
-            
+
         }else if(d3.selectAll("#"+d).attr("selected") == 0){
             d3.selectAll("#"+d).transition().duration(800)
                     .attr("selected", 1)
                     .style("opacity", 0.7)
-        
+
         var ind = arr.indexOf(d);
         if(ind > -1) arr.splice(ind,1);
-            
-        };                    
+
+        };
         //console.log(arr);
         output(arr);
         }
-    
+
     var out =[];
     out.push("scatter");
-    
+
     function output(arr){
         for(i=0; i<arr.length;i++){
             out.push("food != '"+arr[i]+"'");
         }
         console.log(out);
         runsql(out);
-        
+
     }
-    
-    
-        
+
+
+
     // draw legend text
     legend.append("text")
             .attr("x", w - 24)
@@ -191,7 +191,5 @@ d3.json("data/withNRec.json",function(dataset){
             .attr("dy", ".35em")
             .style("text-anchor", "end")
             .text(function(d) { return d;})
-        
-});
 
-   
+});

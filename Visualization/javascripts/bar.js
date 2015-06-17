@@ -10,7 +10,7 @@ d3.json(newData,function(dataset){
 
                             var margin = {top: 20, right: 30, bottom: 30, left: 40},
                             w= 5000 - margin.left - margin.right,
-                            h= 800 - margin.top - margin.bottom;
+                            h= 200 - margin.top - margin.bottom;
 
                             var cValue = function(d) { return d.conservation;},
                                 color = d3.scale.category10();
@@ -73,7 +73,7 @@ d3.json(newData,function(dataset){
                                 tooltip.html("<h>"+d.name+"</h>" + "<br/>"  +"<p>"+ "Number of Recordings: " +                                               d.numRecordings+ "<br/>"+"Conservation Status: "+ d.conservation+"</p>")
 
                                     .style("left", (d3.mouse(this)[0]-document.getElementById("bar").scrollLeft) + "px")
-                                    .style("top", (1050 + d3.mouse(this)[1]) + "px");
+                                    .style("top", (50 + d3.mouse(this)[1]) + "px");
                                 })
 
                                 .on("mouseout", function(d) {
@@ -100,6 +100,20 @@ d3.json(newData,function(dataset){
                                 .attr("font-size", "11px")
                                 .attr("fill", "white")
                                 .attr("text-anchor", "middle");*/
+
+  function change() {
+        var value = this.value;
+        svg.selectAll("rect").value(function(d) { return d[value]; }); // change the value function
+        svg.selectAll("rect").data(DDa); // compute the new angles
+        svg.selectAll("rect").transition().duration(750).attrTween("d", arcTween); // redraw the arcs
+      }
+  function arcTween(a) {
+    var i = d3.interpolate(this._current, a);
+    this._current = i(0);
+    return function(t) {
+      return arc(i(t));
+    }
+  };
 
                 var tooltip = d3.select("#bar").append("div")
                                 .attr("class", "tooltip")

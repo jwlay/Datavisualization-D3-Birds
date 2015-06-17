@@ -1,6 +1,6 @@
 // Dimensions of sunburst.
 var width = 500;
-var height = 400;
+var height = 300;
 var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
@@ -27,6 +27,26 @@ var colors = {
   "Vulnerable": "#de783b",
   "Endangered": "#6ab975",
   "Critically Endangered": "#a173d1",
+  "Town": "#a173d1",
+  "Forest": "#00cc00",
+  "Lake/Pond":"#B1C4E6",
+  "Open Woodland": "#06542A",
+  "Mountains": "#ACBDB4",
+  "Grassland": "#07DB26",
+  "Marsh":"#EDDE34",
+  "Ocean":"#34EDD8",
+  "Shore-line":"#4854A3",
+  "Scrub":"#CF791D",
+  "Deserts":"#E8CE25",
+  "River/Stream":"#099E7E",
+  "Ground":"#9E5609",
+  "Tree":"#2A7523",
+  "Building":"#6504B0",
+  "Shrub":"#EDED32",
+  "Cavity":"#D8E3E0",
+  "Cliff":"#3E4242",
+  "Floating":"#626F9C",
+  "Burrow":"#90629C",
   "end": "#bbbbbb"
 };
 
@@ -50,7 +70,9 @@ var arc = d3.svg.arc()
 // row, and can receive the csv as an array of arrays.
 var suncsv;
 function createSunburst() {
+  console.log(suncsv);
   var json = buildHierarchy(suncsv);
+  console.log(json);
   createVisualization(json);
 };
 
@@ -149,6 +171,11 @@ function createVisualization(json) {
       .on("click", click)
       .each(stash);
     })
+
+
+    d3.selectAll("scatter").value(function(d) { return d[value]; }); // change the value function
+    d3.selectAll("scatter").data(barcsv); // compute the new angles
+    d3.selectAll("scatter").transition().duration(750).attrTween("d", arcTween); // redraw the arcs
   }
   // Get total size of the tree = value of root node from partition.
   totalSize = path.node().__data__.value;
